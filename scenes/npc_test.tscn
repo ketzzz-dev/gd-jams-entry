@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dndj6tlyvmsfe"]
 
 [ext_resource type="Texture2D" uid="uid://cav0jl4t63ypq" path="res://greybox/greybox_dark_grid.png" id="1_tjff3"]
+[ext_resource type="PackedScene" uid="uid://cves1g242m8kq" path="res://scenes/objects/npc.tscn" id="3_bjw1c"]
+[ext_resource type="Script" uid="uid://gw2a68sj1okk" path="res://scripts/npc_spawner.gd" id="5_l4rog"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2e40l"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -17,13 +19,13 @@ glow_enabled = true
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_l4rog"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjbhd"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjff3"]
 albedo_texture = ExtResource("1_tjff3")
 uv1_triplanar = true
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ecxoc"]
-material = SubResource("StandardMaterial3D_xjbhd")
-size = Vector2(10, 10)
+material = SubResource("StandardMaterial3D_tjff3")
+size = Vector2(100, 100)
 
 [node name="NpcTest" type="Node3D" unique_id=612549007]
 
@@ -43,4 +45,10 @@ shape = SubResource("WorldBoundaryShape3D_l4rog")
 mesh = SubResource("PlaneMesh_ecxoc")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1558763673]
-transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 2.5, 5)
+transform = Transform3D(0.7071067, -0.49999997, 0.49999994, 0, 0.70710677, 0.7071067, -0.7071067, -0.49999997, 0.49999994, 5, 5, 5)
+
+[node name="NpcSpawner" type="Node" parent="." unique_id=1304294437]
+script = ExtResource("5_l4rog")
+region_size = Vector2(10, 10)
+min_distance = 1.5
+npc_scene = ExtResource("3_bjw1c")

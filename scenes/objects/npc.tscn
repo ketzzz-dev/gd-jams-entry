@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cves1g242m8kq"]
+
+[ext_resource type="Script" uid="uid://bt6jklxg1wi4h" path="res://scripts/npc.gd" id="1_qgsx0"]
+[ext_resource type="Texture2D" uid="uid://dsho8eqf0ffep" path="res://sprites/character_2_frame32x32.png" id="3_1jynd"]
+[ext_resource type="Texture2D" uid="uid://c21v0dcdy8xdy" path="res://sprites/character_1_frame32x32.png" id="3_6lyva"]
+[ext_resource type="Texture2D" uid="uid://b8qnnqtw122ew" path="res://sprites/character_3_frame32x32.png" id="4_ysic5"]
+[ext_resource type="Texture2D" uid="uid://48q5xahy3acv" path="res://sprites/character_4_frame32x32.png" id="5_1tcl3"]
+[ext_resource type="Texture2D" uid="uid://bn6x36kivagjb" path="res://sprites/character_5_frame32x32.png" id="6_c5mrk"]
+[ext_resource type="Texture2D" uid="uid://bpnks35qdjw2j" path="res://sprites/character_6_frame32x32.png" id="7_33x1v"]
+[ext_resource type="Texture2D" uid="uid://ddovs61ifk1fq" path="res://sprites/character_7_frame32x32.png" id="8_6kqqw"]
+[ext_resource type="Texture2D" uid="uid://5ytimt6h3put" path="res://sprites/character_8_frame32x32.png" id="9_awjmo"]
+[ext_resource type="Texture2D" uid="uid://b8dwnqboq8u7u" path="res://sprites/character_9_frame32x32.png" id="10_o1cl7"]
+[ext_resource type="Texture2D" uid="uid://do80fgrmby0yx" path="res://sprites/character_10_frame32x32.png" id="11_hgyku"]
+[ext_resource type="Texture2D" uid="uid://dceivywwufd8v" path="res://sprites/character_11_frame32x32.png" id="12_7d2te"]
+[ext_resource type="Texture2D" uid="uid://bel6pvibjg72m" path="res://sprites/character_12_frame32x32.png" id="13_f35o5"]
+[ext_resource type="Texture2D" uid="uid://b63ayfuiwoakj" path="res://sprites/character_13_frame32x32.png" id="14_nv32l"]
+[ext_resource type="Texture2D" uid="uid://q84ra1uwigsk" path="res://sprites/character_14_frame32x32.png" id="15_nav0f"]
+[ext_resource type="Texture2D" uid="uid://c3t1drr1tlbl6" path="res://sprites/character_15_frame32x32.png" id="16_jlvid"]
+[ext_resource type="Texture2D" uid="uid://bio0oo74pufxi" path="res://sprites/character_16_frame32x32.png" id="17_atug8"]
+[ext_resource type="Texture2D" uid="uid://r8ogjunrxs1g" path="res://sprites/character_17_frame32x32.png" id="18_bx8sl"]
+[ext_resource type="Texture2D" uid="uid://64y42uoj6iix" path="res://sprites/character_18_frame32x32.png" id="19_slyev"]
+[ext_resource type="Texture2D" uid="uid://qav427klukk0" path="res://sprites/character_19_frame32x32.png" id="20_5dnjc"]
+[ext_resource type="Texture2D" uid="uid://bxdgx1eixd702" path="res://sprites/character_20_frame32x32.png" id="21_5npm1"]
+[ext_resource type="Texture2D" uid="uid://bhergptkilphs" path="res://sprites/character_21_frame32x32.png" id="22_tfhhl"]
+[ext_resource type="Texture2D" uid="uid://bh68d6ww4wyi6" path="res://sprites/character_22_frame32x32.png" id="23_qts12"]
+[ext_resource type="Texture2D" uid="uid://cubo8lypc0o2n" path="res://sprites/character_23_frame32x32.png" id="24_1xnau"]
+[ext_resource type="Texture2D" uid="uid://cvmud86j1kav5" path="res://sprites/character_24_frame32x32.png" id="25_1prls"]
+[ext_resource type="Texture2D" uid="uid://djs075kc5gtt3" path="res://sprites/character_25_frame32x32.png" id="26_o7mi7"]
+[ext_resource type="Texture2D" uid="uid://c6lsmx7vbiwrj" path="res://sprites/character_26_frame32x32.png" id="27_06emc"]
+[ext_resource type="Texture2D" uid="uid://bafqv0bnra6fh" path="res://sprites/character_27_frame32x32.png" id="28_eqmpl"]
+[ext_resource type="Texture2D" uid="uid://dvu3muw4hih0q" path="res://sprites/character_28_frame32x32.png" id="29_xu33u"]
+[ext_resource type="Texture2D" uid="uid://btunda3mxs8tu" path="res://sprites/character_29_frame32x32.png" id="30_7aory"]
+[ext_resource type="Texture2D" uid="uid://b6w11s8uq8iin" path="res://sprites/character_30_frame32x32.png" id="31_2y58u"]
+[ext_resource type="Texture2D" uid="uid://cf8jhnddyplkl" path="res://sprites/character_31_frame32x32.png" id="32_yrmbb"]
+[ext_resource type="Texture2D" uid="uid://d26u11a3pjny3" path="res://sprites/character_32_frame32x32.png" id="33_tkbs6"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bjw1c"]
+height = 1.0
+radius = 0.25
+
+[node name="Npc" type="CharacterBody3D" unique_id=1999063034]
+script = ExtResource("1_qgsx0")
+sprites = Array[Texture2D]([ExtResource("3_6lyva"), ExtResource("3_1jynd"), ExtResource("4_ysic5"), ExtResource("5_1tcl3"), ExtResource("6_c5mrk"), ExtResource("7_33x1v"), ExtResource("8_6kqqw"), ExtResource("9_awjmo"), ExtResource("10_o1cl7"), ExtResource("11_hgyku"), ExtResource("12_7d2te"), ExtResource("13_f35o5"), ExtResource("14_nv32l"), ExtResource("15_nav0f"), ExtResource("16_jlvid"), ExtResource("17_atug8"), ExtResource("18_bx8sl"), ExtResource("19_slyev"), ExtResource("20_5dnjc"), ExtResource("21_5npm1"), ExtResource("22_tfhhl"), ExtResource("23_qts12"), ExtResource("24_1xnau"), ExtResource("25_1prls"), ExtResource("26_o7mi7"), ExtResource("27_06emc"), ExtResource("28_eqmpl"), ExtResource("29_xu33u"), ExtResource("30_7aory"), ExtResource("31_2y58u"), ExtResource("32_yrmbb"), ExtResource("33_tkbs6")])
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1673776231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CylinderShape3D_bjw1c")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=467937966]
+offset = Vector2(0, 5)
+pixel_size = 0.0625
+billboard = 1
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("3_6lyva")
+hframes = 3
+vframes = 4
+frame = 1
