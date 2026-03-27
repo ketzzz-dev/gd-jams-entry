@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dsy7gjatue2b6"]
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dsy7gjatue2b6"]
 
 [ext_resource type="Texture2D" uid="uid://d3bd001f1q4xf" path="res://greybox/greybox_orange_grid.png" id="1_lsydm"]
 

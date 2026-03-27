@@ -1,12 +1,13 @@
-[gd_scene format=3 uid="uid://dqb1333ilkfmn"]
+[gd_scene load_steps=9 format=3 uid="uid://dqb1333ilkfmn"]
 
 [ext_resource type="Texture2D" uid="uid://cav0jl4t63ypq" path="res://greybox/greybox_dark_grid.png" id="1_gldc4"]
 [ext_resource type="Material" uid="uid://jl5finxd4si8" path="res://materials/placeholder_blue.tres" id="2_0cso3"]
 [ext_resource type="Material" uid="uid://dsy7gjatue2b6" path="res://materials/placeholder_orange.tres" id="3_2klcf"]
+[ext_resource type="Script" uid="uid://b36xo5pajw5gn" path="res://scenes/camera.gd" id="4_0cso3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gldc4"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
 
 [sub_resource type="Sky" id="Sky_0cso3"]
 sky_material = SubResource("ProceduralSkyMaterial_gldc4")
@@ -21,101 +22,102 @@ glow_enabled = true
 albedo_texture = ExtResource("1_gldc4")
 uv1_triplanar = true
 
-[node name="Map" type="Node3D" unique_id=2001808224]
+[node name="Map" type="Node3D"]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1772630622]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2120227735]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2klcf")
 
-[node name="Floor" type="CSGBox3D" parent="." unique_id=1938148538]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0014829636, -0.023376465, -0.00060224533)
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00148296, -0.0233765, -0.000602245)
 use_collision = true
-size = Vector3(9, 0.052856445, 9)
+size = Vector3(9, 0.0528564, 9)
 material = SubResource("StandardMaterial3D_2lpho")
 
-[node name="Bridge" type="CSGBox3D" parent="." unique_id=863661362]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25723875, 0)
-size = Vector3(3.2229004, 1.2145996, 1)
+[node name="Bridge" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.257239, 0)
+size = Vector3(3.2229, 1.2146, 1)
 material = ExtResource("2_0cso3")
 
-[node name="Underbridge" type="CSGCylinder3D" parent="Bridge" unique_id=731774998]
-transform = Transform3D(2.8000002, 0, 0, 0, -4.371139e-08, -1.3267798, 0, 1, -5.7995393e-08, 0, -0.3, 0)
+[node name="Underbridge" type="CSGCylinder3D" parent="Bridge"]
+transform = Transform3D(2.8, 0, 0, 0, -4.37114e-08, -1.32678, 0, 1, -5.79954e-08, 0, -0.3, 0)
 operation = 2
-height = 1.0751953
+height = 1.0752
 material = ExtResource("2_0cso3")
 
-[node name="Right_Stairs" type="CSGPolygon3D" parent="Bridge" unique_id=1825929990]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6107702, -0.39018184, 0.5)
+[node name="Right_Stairs" type="CSGPolygon3D" parent="Bridge"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.61077, -0.390182, 0.5)
 polygon = PackedVector2Array(0, 0, 0, 1, 2, 0)
 material = ExtResource("2_0cso3")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Bridge/Right_Stairs" unique_id=2113196018]
-transform = Transform3D(0.90630776, 0.42261827, 0, -0.42261827, 0.90630776, 0, 0, 0, 1, 0.8499999, 0.53849244, -0.5)
+[node name="CSGBox3D" type="CSGBox3D" parent="Bridge/Right_Stairs"]
+transform = Transform3D(0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 0, 0, 1, 0.85, 0.538492, -0.5)
 operation = 2
-size = Vector3(2, 0.14990234, 0.8466797)
+size = Vector3(2, 0.149902, 0.84668)
 material = ExtResource("2_0cso3")
 
-[node name="Left_Stairs" type="CSGPolygon3D" parent="Bridge" unique_id=1566542652]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.611574, -0.3917953, -0.5006497)
+[node name="Left_Stairs" type="CSGPolygon3D" parent="Bridge"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.61157, -0.391795, -0.50065)
 polygon = PackedVector2Array(0, 0, 0, 1, 2, 0)
 material = ExtResource("2_0cso3")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Bridge/Left_Stairs" unique_id=1289174627]
-transform = Transform3D(0.90630776, 0.42261827, 0, -0.42261827, 0.90630776, 0, 0, 0, 1, 0.8499999, 0.53849244, -0.5)
+[node name="CSGBox3D" type="CSGBox3D" parent="Bridge/Left_Stairs"]
+transform = Transform3D(0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 0, 0, 1, 0.85, 0.538492, -0.5)
 operation = 2
-size = Vector3(2, 0.14990234, 0.8466797)
+size = Vector3(2, 0.149902, 0.84668)
 material = ExtResource("2_0cso3")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Bridge" unique_id=430442508]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.53849244, 0)
+[node name="CSGBox3D" type="CSGBox3D" parent="Bridge"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.538492, 0)
 operation = 2
-size = Vector3(3.3720703, 0.14990234, 0.8466797)
+size = Vector3(3.37207, 0.149902, 0.84668)
 material = ExtResource("2_0cso3")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1881214271]
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.55, 2)
-size = Vector3(1, 1.3000001, 1)
+size = Vector3(1, 1.3, 1)
 material = ExtResource("3_2klcf")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1842344880]
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.55, 3.2)
-size = Vector3(1, 1.3000001, 1)
+size = Vector3(1, 1.3, 1)
 material = ExtResource("3_2klcf")
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=174908336]
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.55, -3)
-size = Vector3(1, 1.3000001, 1)
+size = Vector3(1, 1.3, 1)
 material = ExtResource("3_2klcf")
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=912677987]
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.55, -2)
-size = Vector3(1, 1.3000001, 1)
+size = Vector3(1, 1.3, 1)
 material = ExtResource("3_2klcf")
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=241228397]
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.55, 2)
-size = Vector3(1, 1.3000001, 1)
+size = Vector3(1, 1.3, 1)
 material = ExtResource("3_2klcf")
 
-[node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=1408516785]
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.55, -2)
-size = Vector3(1, 1.3000001, 1)
+size = Vector3(1, 1.3, 1)
 material = ExtResource("3_2klcf")
 
-[node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=2004937257]
+[node name="CSGBox3D7" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.55, -3.6)
-size = Vector3(1, 1.3000001, 1)
+size = Vector3(1, 1.3, 1)
 material = ExtResource("3_2klcf")
 
-[node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=300989197]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.55, 3.3000002)
-size = Vector3(1, 1.3000001, 1)
+[node name="CSGBox3D8" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.55, 3.3)
+size = Vector3(1, 1.3, 1)
 material = ExtResource("3_2klcf")
 
-[node name="Node3D" type="Node3D" parent="." unique_id=2049594318]
+[node name="TwistPivot" type="Node3D" parent="."]
+script = ExtResource("4_0cso3")
 
-[node name="Camera3D" type="Camera3D" parent="Node3D" unique_id=828786981]
-transform = Transform3D(1, 0, 0, 0, 0.7677806, 0.640713, 0, -0.640713, 0.7677806, 0, 4.6628594, 6.438448)
+[node name="Camera3D" type="Camera3D" parent="TwistPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.767781, 0.640713, 0, -0.640713, 0.767781, 0, 4.66286, 6.43845)
