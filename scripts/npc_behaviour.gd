@@ -10,3 +10,6 @@ func reset(_rng: RandomNumberGenerator) -> void:
 
 func sample(_context: Dictionary, _delta: float, _rng: RandomNumberGenerator) -> Vector2:
 	return Vector2.ZERO
+
+func modulate(_context: Dictionary, _delta: float, _rng: RandomNumberGenerator) -> float:
+	return 1.0

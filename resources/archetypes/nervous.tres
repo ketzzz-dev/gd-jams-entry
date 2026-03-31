@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="NPCArchetype" format=3 uid="uid://v47ru2wjvtgu"]
+
+[ext_resource type="Script" uid="uid://r3v7lixwmb1w" path="res://scripts/npc_behaviour.gd" id="1_ly8xi"]
+[ext_resource type="Script" uid="uid://cgaegan4a5gxs" path="res://scripts/behaviours/wander_behaviour.gd" id="2_8vyky"]
+[ext_resource type="Script" uid="uid://j1mhixob8ewl" path="res://scripts/npc_archetype.gd" id="2_m5udd"]
+[ext_resource type="Script" uid="uid://dsdpboabs7v8h" path="res://scripts/behaviours/avoid_behaviour.gd" id="3_wu654"]
+
+[sub_resource type="Resource" id="Resource_we0yd"]
+script = ExtResource("2_8vyky")
+turn_interval_min = 0.2
+turn_interval_max = 0.6
+jitter = 0.25
+metadata/_custom_type_script = "uid://cgaegan4a5gxs"
+
+[sub_resource type="Resource" id="Resource_obh22"]
+script = ExtResource("3_wu654")
+weight = 0.6
+metadata/_custom_type_script = "uid://dsdpboabs7v8h"
+
+[resource]
+script = ExtResource("2_m5udd")
+behaviours = Array[ExtResource("1_ly8xi")]([SubResource("Resource_we0yd"), SubResource("Resource_obh22")])
+micro_jitter = 0.12
+metadata/_custom_type_script = "uid://j1mhixob8ewl"

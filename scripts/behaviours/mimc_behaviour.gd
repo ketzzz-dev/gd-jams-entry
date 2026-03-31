@@ -43,4 +43,4 @@ func sample(context: Dictionary, delta: float, rng: RandomNumberGenerator) -> Ve
 		rng.randf_range(-drift, drift)
 	)
 
-	return delayed.normalized()
+	return delayed.normalized() if delayed.length_squared() > 1 else delayed

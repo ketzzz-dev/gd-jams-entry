@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="NPCArchetype" format=3 uid="uid://ffvhm01brr2m"]
+
+[ext_resource type="Script" uid="uid://r3v7lixwmb1w" path="res://scripts/npc_behaviour.gd" id="1_dl5t7"]
+[ext_resource type="Script" uid="uid://j1mhixob8ewl" path="res://scripts/npc_archetype.gd" id="2_ggwyw"]
+[ext_resource type="Script" uid="uid://cgaegan4a5gxs" path="res://scripts/behaviours/wander_behaviour.gd" id="2_nkplv"]
+[ext_resource type="Script" uid="uid://dsdpboabs7v8h" path="res://scripts/behaviours/avoid_behaviour.gd" id="3_obrak"]
+
+[sub_resource type="Resource" id="Resource_20e7r"]
+script = ExtResource("2_nkplv")
+turn_bias = 0.9
+jitter = 0.2
+weight = 1.2
+metadata/_custom_type_script = "uid://cgaegan4a5gxs"
+
+[sub_resource type="Resource" id="Resource_f45fe"]
+script = ExtResource("3_obrak")
+metadata/_custom_type_script = "uid://dsdpboabs7v8h"
+
+[resource]
+script = ExtResource("2_ggwyw")
+behaviours = Array[ExtResource("1_dl5t7")]([SubResource("Resource_20e7r"), SubResource("Resource_f45fe")])
+metadata/_custom_type_script = "uid://j1mhixob8ewl"

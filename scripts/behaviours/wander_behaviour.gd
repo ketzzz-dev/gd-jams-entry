@@ -33,5 +33,7 @@ func sample(_context: Dictionary, delta: float, rng: RandomNumberGenerator) -> V
 		rng.randf_range(-jitter, jitter),
 		rng.randf_range(-jitter, jitter)
 	)
+	
+	var output = _direction + noise
 
-	return (_direction + noise).normalized()
+	return output.normalized() if output.length_squared() > 1 else output

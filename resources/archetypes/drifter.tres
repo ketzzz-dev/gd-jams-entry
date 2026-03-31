@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="NPCArchetype" format=3 uid="uid://bcjtrb4b3f3mq"]
+
+[ext_resource type="Script" uid="uid://r3v7lixwmb1w" path="res://scripts/npc_behaviour.gd" id="1_qg1ky"]
+[ext_resource type="Script" uid="uid://cgaegan4a5gxs" path="res://scripts/behaviours/wander_behaviour.gd" id="2_iawh4"]
+[ext_resource type="Script" uid="uid://j1mhixob8ewl" path="res://scripts/npc_archetype.gd" id="2_l4cw8"]
+[ext_resource type="Script" uid="uid://dyb5x2575p6hu" path="res://scripts/behaviours/pause_behaviour.gd" id="3_q6s81"]
+[ext_resource type="Script" uid="uid://dsdpboabs7v8h" path="res://scripts/behaviours/avoid_behaviour.gd" id="4_2dbqe"]
+
+[sub_resource type="Resource" id="Resource_prioy"]
+script = ExtResource("2_iawh4")
+turn_interval_max = 2.5
+weight = 0.8
+metadata/_custom_type_script = "uid://cgaegan4a5gxs"
+
+[sub_resource type="Resource" id="Resource_4bha7"]
+script = ExtResource("3_q6s81")
+pause_chance = 0.05
+pause_duration_max = 1.2
+metadata/_custom_type_script = "uid://dyb5x2575p6hu"
+
+[sub_resource type="Resource" id="Resource_qtct5"]
+script = ExtResource("4_2dbqe")
+weight = 0.3
+metadata/_custom_type_script = "uid://dsdpboabs7v8h"
+
+[resource]
+script = ExtResource("2_l4cw8")
+behaviours = Array[ExtResource("1_qg1ky")]([SubResource("Resource_prioy"), SubResource("Resource_4bha7"), SubResource("Resource_qtct5")])
+metadata/_custom_type_script = "uid://j1mhixob8ewl"

@@ -5,31 +5,82 @@ const NUM_SAMPLES_BEFORE_REJECTION := 30
 @export var region_size: Vector2 = Vector2(100, 100)
 @export var min_distance: float = 5
 
-@export var npc_scene: PackedScene
-@export var npc_sprites: Array[Texture2D]
+@export var character_scene: PackedScene
+@export var character_sprites: Array[Texture2D]
+@export var character_archetypes: Array[NPCArchetype]
+
+@export var influence_radius: float = 4
 
 var _cols: int
 var _rows: int
 var _cell_size: float
 
+var _characters: Array[Character] = []
+
 func _ready() -> void:
-	var available_sprites = npc_sprites.duplicate()
+	var available_sprites = character_sprites.duplicate()
 	
-	for point in generate_points():
-		await get_tree().create_timer(get_physics_process_delta_time()).timeout
+	for point in _generate_points():
+		await get_tree().process_frame
 		
 		if available_sprites.is_empty():
-			available_sprites = npc_sprites.duplicate()
+			available_sprites = character_sprites.duplicate()
 			available_sprites.shuffle()
 		
-		var npc := npc_scene.instantiate() as Character
+		var character: Character = character_scene.instantiate()
+		var rand_idx := randi_range(0, character_archetypes.size() - 1)
 		
-		npc.position = Vector3(point.x - 0.5 * region_size.x, 0, point.y - 0.5 * region_size.y)
-		npc.sprite = available_sprites.pop_back()
+		add_child(character)
 		
-		add_child(npc)
+		character.position = Vector3(point.x - 0.5 * region_size.x, 0, point.y - 0.5 * region_size.y)
+		character.sprite.texture = available_sprites.pop_back()
+		character.brain.archetype = character_archetypes[rand_idx]
+		
+		_characters.append(character)
 
-func generate_points() -> Array[Vector2]:
+func _physics_process(_delta: float) -> void:
+	for character in _characters:
+		if not character.brain:
+			continue
+		
+		var pos := Vector2(character.position.x, character.position.z)
+		
+		var repulsion := Vector2.ZERO
+		var velocity_sum := Vector2.ZERO
+		var neighbour_count := 0
+		var nearest := INF
+		
+		for other in _characters:
+			if other == character:
+				continue
+			
+			var other_pos := Vector2(other.position.x, other.position.z)
+			var offset := pos - other_pos
+			var dist := offset.length()
+			
+			if dist < nearest:
+				nearest = dist
+			
+			if dist > influence_radius or is_zero_approx(dist):
+				continue
+			
+			neighbour_count += 1
+			
+			var push_strength := 1.0 / (dist * dist)
+			
+			repulsion += offset.normalized() * push_strength
+			velocity_sum += Vector2(other.velocity.x, other.velocity.z)
+		
+		var avg_direction := Vector2.ZERO
+		
+		if neighbour_count > 0:
+			avg_direction = (velocity_sum / neighbour_count).normalized()
+		
+		character.brain.crowd_average = avg_direction
+		character.brain.crowd_repulsion = repulsion
+		character.brain.nearest_distance = nearest
+
+func _generate_points() -> Array[Vector2]:
 	_cell_size = min_distance / sqrt(2)
 	_cols = ceili(region_size.x / _cell_size)
 	_rows = ceili(region_size.y / _cell_size)

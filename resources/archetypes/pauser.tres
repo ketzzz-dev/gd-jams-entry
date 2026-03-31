@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="NPCArchetype" format=3 uid="uid://bi81xy40hrhcw"]
+
+[ext_resource type="Script" uid="uid://r3v7lixwmb1w" path="res://scripts/npc_behaviour.gd" id="1_o6jj4"]
+[ext_resource type="Script" uid="uid://dyb5x2575p6hu" path="res://scripts/behaviours/pause_behaviour.gd" id="2_poibx"]
+[ext_resource type="Script" uid="uid://j1mhixob8ewl" path="res://scripts/npc_archetype.gd" id="2_redqb"]
+[ext_resource type="Script" uid="uid://cgaegan4a5gxs" path="res://scripts/behaviours/wander_behaviour.gd" id="3_f87vd"]
+
+[sub_resource type="Resource" id="Resource_twsug"]
+script = ExtResource("2_poibx")
+pause_chance = 0.4
+pause_duration_min = 0.3
+pause_duration_max = 1.0
+metadata/_custom_type_script = "uid://dyb5x2575p6hu"
+
+[sub_resource type="Resource" id="Resource_xuofg"]
+script = ExtResource("3_f87vd")
+metadata/_custom_type_script = "uid://cgaegan4a5gxs"
+
+[resource]
+script = ExtResource("2_redqb")
+behaviours = Array[ExtResource("1_o6jj4")]([SubResource("Resource_twsug"), SubResource("Resource_xuofg")])
+metadata/_custom_type_script = "uid://j1mhixob8ewl"

@@ -7,7 +7,7 @@ extends NPCBehaviour
 
 func sample(context: Dictionary, _delta: float, _rng: RandomNumberGenerator) -> Vector2:
 	var repulsion: Vector2 = context.get("crowd_repulsion", Vector2.ZERO)
-	var nearest_dist: float = context.get("nearest_distance", 1000)
+	var nearest_dist: float = context.get("nearest_distance", INF)
 	
 	var factor := 0.0
 	

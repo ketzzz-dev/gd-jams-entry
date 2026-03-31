@@ -1,21 +1,16 @@
 class_name Character
 extends CharacterBody3D
 
-@export var sprite: Texture2D
-
 @export var speed: float = 3
 @export var acceleration: float = 2
 @export var deceleration: float = 9
 
-@onready var brain := $NPCBrain
+@onready var sprite: Sprite3D = $Sprite3D
+@onready var brain: NPCBrain = $NPCBrain
 
 var _input_vector := Vector2.ZERO:
 	set(value):
-		_input_vector = value.normalized()
-
-func _ready() -> void:
-	if sprite:
-		$Sprite3D.texture = sprite
+		_input_vector = value.normalized() if value.length_squared() > 1 else value	
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
