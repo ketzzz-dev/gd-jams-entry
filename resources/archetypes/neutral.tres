@@ -25,4 +25,5 @@ metadata/_custom_type_script = "uid://dyb5x2575p6hu"
 [resource]
 script = ExtResource("2_1lw8v")
 behaviours = Array[ExtResource("1_l34el")]([SubResource("Resource_eukwr"), SubResource("Resource_ekwnl"), SubResource("Resource_hbusw")])
+spawn_weight = 0.3
 metadata/_custom_type_script = "uid://j1mhixob8ewl"

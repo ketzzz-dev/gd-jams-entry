@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="NPCArchetype" format=3 uid="uid://djau48rb4hk4q"]
 
 [ext_resource type="Script" uid="uid://r3v7lixwmb1w" path="res://scripts/npc_behaviour.gd" id="1_0vjwc"]
-[ext_resource type="Script" uid="uid://dlc03jk7p4c58" path="res://scripts/behaviours/mimc_behaviour.gd" id="2_3lbpr"]
+[ext_resource type="Script" uid="uid://dlc03jk7p4c58" path="res://scripts/behaviours/mimic_behaviour.gd" id="2_3lbpr"]
 [ext_resource type="Script" uid="uid://j1mhixob8ewl" path="res://scripts/npc_archetype.gd" id="2_47wvu"]
 [ext_resource type="Script" uid="uid://cgaegan4a5gxs" path="res://scripts/behaviours/wander_behaviour.gd" id="3_4e05c"]
 [ext_resource type="Script" uid="uid://dyb5x2575p6hu" path="res://scripts/behaviours/pause_behaviour.gd" id="4_u2n3k"]
@@ -33,4 +33,5 @@ metadata/_custom_type_script = "uid://dsdpboabs7v8h"
 script = ExtResource("2_47wvu")
 behaviours = Array[ExtResource("1_0vjwc")]([SubResource("Resource_f8n00"), SubResource("Resource_b0xv7"), SubResource("Resource_c44sr"), SubResource("Resource_n6w6o")])
 output_smoothing = 0.15
+spawn_weight = 0.07
 metadata/_custom_type_script = "uid://j1mhixob8ewl"

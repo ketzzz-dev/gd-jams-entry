@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://r3v7lixwmb1w" path="res://scripts/npc_behaviour.gd" id="1_hd1vh"]
 [ext_resource type="Script" uid="uid://j1mhixob8ewl" path="res://scripts/npc_archetype.gd" id="2_f224t"]
-[ext_resource type="Script" uid="uid://dlc03jk7p4c58" path="res://scripts/behaviours/mimc_behaviour.gd" id="2_nh7o4"]
+[ext_resource type="Script" uid="uid://dlc03jk7p4c58" path="res://scripts/behaviours/mimic_behaviour.gd" id="2_nh7o4"]
 [ext_resource type="Script" uid="uid://cgaegan4a5gxs" path="res://scripts/behaviours/wander_behaviour.gd" id="3_o8n3f"]
 
 [sub_resource type="Resource" id="Resource_voejo"]
@@ -18,4 +18,5 @@ metadata/_custom_type_script = "uid://cgaegan4a5gxs"
 [resource]
 script = ExtResource("2_f224t")
 behaviours = Array[ExtResource("1_hd1vh")]([SubResource("Resource_voejo"), SubResource("Resource_l2tky")])
+spawn_weight = 0.03
 metadata/_custom_type_script = "uid://j1mhixob8ewl"

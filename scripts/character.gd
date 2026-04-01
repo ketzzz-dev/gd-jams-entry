@@ -8,16 +8,20 @@ extends CharacterBody3D
 @onready var sprite: Sprite3D = $Sprite3D
 @onready var brain: NPCBrain = $NPCBrain
 
-var _input_vector := Vector2.ZERO:
-	set(value):
-		_input_vector = value.normalized() if value.length_squared() > 1 else value	
+var _input_vector := Vector2.ZERO
+var active := false
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
-	if brain:
-		_input_vector = brain.get_intent(delta)
+	
+	if brain and active:
+		var intent = brain.get_intent(delta)
+		
+		_input_vector = intent.normalized() if intent.length_squared() > 1 else intent
+	else:
+		_input_vector = Vector2.ZERO
 	
 	var target_velocity = _input_vector * speed
 	var acceleration_factor = deceleration if _input_vector.is_zero_approx() else acceleration

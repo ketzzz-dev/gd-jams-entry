@@ -86,12 +86,12 @@ shape = SubResource("WorldBoundaryShape3D_l4rog")
 mesh = SubResource("PlaneMesh_ecxoc")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1558763673]
-transform = Transform3D(0.7071067, -0.49999997, 0.49999994, 0, 0.70710677, 0.7071067, -0.7071067, -0.49999997, 0.49999994, 6, 5, 6)
+transform = Transform3D(0.9238794, -0.27059802, 0.27059802, 0, 0.7071067, 0.7071067, -0.3826834, -0.6532814, 0.6532814, 4, 7, 12)
 
 [node name="CrowdManager" type="Node" parent="." unique_id=1304294437]
 script = ExtResource("2_bj6fs")
 region_size = Vector2(15, 15)
-min_distance = 1.5
+min_distance = 1.0
 character_scene = ExtResource("3_w5a2o")
 character_sprites = Array[Texture2D]([ExtResource("4_o3j38"), ExtResource("5_ssiq4"), ExtResource("6_dlxfx"), ExtResource("7_sv8b5"), ExtResource("8_ukasj"), ExtResource("9_jamk8"), ExtResource("10_r5fdn"), ExtResource("11_2bmrn"), ExtResource("12_i5w1i"), ExtResource("13_aitlr"), ExtResource("14_7c8f0"), ExtResource("15_en354"), ExtResource("16_3gb4y"), ExtResource("17_rvn1l"), ExtResource("18_bkf55"), ExtResource("19_e25fc"), ExtResource("20_7he6q"), ExtResource("21_rt62e"), ExtResource("22_sbham"), ExtResource("23_kan3g"), ExtResource("24_da2n4"), ExtResource("25_65eag"), ExtResource("26_sla20"), ExtResource("27_n7m5d"), ExtResource("28_uhdvl"), ExtResource("29_2min0"), ExtResource("30_gbj1p"), ExtResource("31_1x23n"), ExtResource("32_a5drt"), ExtResource("33_8m0sb"), ExtResource("34_btpf7"), ExtResource("35_1hqms")])
 character_archetypes = Array[ExtResource("36_r5fdn")]([ExtResource("37_2bmrn"), ExtResource("38_i5w1i"), ExtResource("39_aitlr"), ExtResource("40_7c8f0"), ExtResource("41_en354"), ExtResource("42_3gb4y"), ExtResource("43_rvn1l"), ExtResource("44_bkf55")])

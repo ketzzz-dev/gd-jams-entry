@@ -21,4 +21,5 @@ metadata/_custom_type_script = "uid://dsdpboabs7v8h"
 script = ExtResource("2_m5udd")
 behaviours = Array[ExtResource("1_ly8xi")]([SubResource("Resource_we0yd"), SubResource("Resource_obh22")])
 micro_jitter = 0.12
+spawn_weight = 0.1
 metadata/_custom_type_script = "uid://j1mhixob8ewl"

@@ -11,11 +11,14 @@ const NUM_SAMPLES_BEFORE_REJECTION := 30
 
 @export var influence_radius: float = 4
 
+var _player_archetype: NPCArchetype = preload("res://resources/archetypes/player.tres")
+
 var _cols: int
 var _rows: int
 var _cell_size: float
 
 var _characters: Array[Character] = []
+var _spatial_grid: Dictionary[Vector2i, Array] = {}
 
 func _ready() -> void:
 	var available_sprites = character_sprites.duplicate()
@@ -28,17 +31,25 @@ func _ready() -> void:
 			available_sprites.shuffle()
 		
 		var character: Character = character_scene.instantiate()
-		var rand_idx := randi_range(0, character_archetypes.size() - 1)
 		
 		add_child(character)
 		
 		character.position = Vector3(point.x - 0.5 * region_size.x, 0, point.y - 0.5 * region_size.y)
 		character.sprite.texture = available_sprites.pop_back()
-		character.brain.archetype = character_archetypes[rand_idx]
+		character.brain.archetype = _pick_archetype()
 		
 		_characters.append(character)
+	
+	var random_index = randi_range(0, _characters.size() - 1)
+	
+	_characters[random_index].brain.archetype = _player_archetype
+	
+	for character in _characters:
+		character.active = true
 
 func _physics_process(_delta: float) -> void:
+	_rebuild_spatial_grid()
+	
 	for character in _characters:
 		if not character.brain:
 			continue
@@ -50,7 +61,7 @@ func _physics_process(_delta: float) -> void:
 		var neighbour_count := 0
 		var nearest := INF
 		
-		for other in _characters:
+		for other in _get_neighbours(character):
 			if other == character:
 				continue
 			
@@ -79,6 +90,53 @@ func _physics_process(_delta: float) -> void:
 		character.brain.crowd_average = avg_direction
 		character.brain.crowd_repulsion = repulsion
 		character.brain.nearest_distance = nearest
+
+func _pick_archetype() -> NPCArchetype:
+	var total_weight := 0.0
+	
+	for archetype in character_archetypes:
+		total_weight += archetype.spawn_weight
+	
+	var roll := randf() * total_weight
+
+	for archetype in character_archetypes:
+		roll -= archetype.spawn_weight
+		
+		if roll <= 0.0:
+			return archetype
+	
+	return character_archetypes.back()
+
+func _rebuild_spatial_grid() -> void:
+	_spatial_grid.clear()
+	
+	for character in _characters:
+		var cell := Vector2i(
+			floori(character.position.x / influence_radius),
+			floori(character.position.z / influence_radius)
+		)
+		
+		if not _spatial_grid.has(cell):
+			_spatial_grid[cell] = []
+		
+		_spatial_grid[cell].append(character)
+
+func _get_neighbours(character: Character) -> Array:
+	var cell := Vector2i(
+		floori(character.position.x / influence_radius),
+		floori(character.position.z / influence_radius)
+	)
+	
+	var neighbours := []
+	
+	for dx in range(-1, 2):
+		for dy in range(-1, 2):
+			var neighbour_cell := cell + Vector2i(dx, dy)
+			
+			if _spatial_grid.has(neighbour_cell):
+				neighbours.append_array(_spatial_grid[neighbour_cell])
+	
+	return neighbours
 
 func _generate_points() -> Array[Vector2]:
 	_cell_size = min_distance / sqrt(2)

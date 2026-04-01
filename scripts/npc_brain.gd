@@ -22,21 +22,22 @@ var _behaviours: Array[NPCBehaviour] = []
 var crowd_average: Vector2 = Vector2.ZERO
 var crowd_repulsion: Vector2 = Vector2.ZERO
 var nearest_distance: float = INF
-var goal_direction: Vector2 = Vector2.ZERO
 
 func _ready() -> void:
 	rng.randomize()
 
 func get_intent(delta: float) -> Vector2:
 	_time += delta
-
+	
+	if not archetype:
+		return Vector2.ZERO
+	
 	var context := {
 		"time": _time,
 		"last_output": _last_output,
 		"crowd_average": crowd_average,
 		"crowd_repulsion": crowd_repulsion,
 		"nearest_distance": nearest_distance,
-		"goal_direction": goal_direction,
 	}
 
 	var sum := Vector2.ZERO
