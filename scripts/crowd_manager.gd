@@ -34,7 +34,7 @@ func _ready() -> void:
 		
 		add_child(character)
 		
-		character.position = Vector3(point.x - 0.5 * region_size.x, 0, point.y - 0.5 * region_size.y)
+		character.position = Vector3(point.x - 0.5 * region_size.x, 10, point.y - 0.5 * region_size.y)
 		character.sprite.texture = available_sprites.pop_back()
 		character.brain.archetype = _pick_archetype()
 		
