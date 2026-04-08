@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dywf27w1ongxw"]
+
+[ext_resource type="Texture2D" uid="uid://cmdrsijvgoun8" path="res://trenchbroom/textures/greybox_lime_solid.png" id="1_isi4i"]
+
+[resource]
+albedo_texture = ExtResource("1_isi4i")
+metallic_specular = 0.0
+texture_filter = 2
