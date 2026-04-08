@@ -193,19 +193,20 @@ func _is_valid(candidate: Vector2, grid: Array[int], points: Array[Vector2]) -> 
 		
 	var cell := Vector2i(int(candidate.x / _cell_size), int(candidate.y / _cell_size))
 	
-	for dx in range(-2, 3): for dy in range(-2, 3):
-		var nx := cell.x + dx
-		var ny := cell.y + dy
-		
-		if nx < 0 or nx >= _cols or ny < 0 or ny >= _rows:
-			continue
-		
-		var idx: int = grid[ny * _cols + nx]
-		
-		if idx > 0:
-			var other := points[idx - 1]
+	for dx in range(-2, 3):
+		for dy in range(-2, 3):
+			var nx := cell.x + dx
+			var ny := cell.y + dy
 			
-			if candidate.distance_squared_to(other) < min_distance * min_distance:
-				return false
+			if nx < 0 or nx >= _cols or ny < 0 or ny >= _rows:
+				continue
+			
+			var idx: int = grid[ny * _cols + nx]
+			
+			if idx > 0:
+				var other := points[idx - 1]
+				
+				if candidate.distance_squared_to(other) < min_distance * min_distance:
+					return false
 	
 	return true

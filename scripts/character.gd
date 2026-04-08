@@ -6,7 +6,11 @@ extends CharacterBody3D
 @export var deceleration: float = 9
 
 @onready var sprite: Sprite3D = $Sprite3D
+@onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
 @onready var brain: NPCBrain = $NPCBrain
+
+var cluster_id: int = -1
+var cluster_center: Vector3 = Vector3.ZERO
 
 var _input_vector := Vector2.ZERO
 var active := false
@@ -14,7 +18,6 @@ var active := false
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-	
 	
 	if brain and active:
 		var intent = brain.get_intent(delta)

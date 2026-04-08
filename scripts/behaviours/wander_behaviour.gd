@@ -1,39 +1,45 @@
 class_name WanderBehaviour
 extends NPCBehaviour
 
-@export var turn_interval_min: float = 0.6
-@export var turn_interval_max: float = 2
-@export var turn_bias: float = 0.65
-@export var jitter: float = 0.12
+@export var interval_min := 2.0
+@export var interval_max := 5.0
+@export var navigation_layers: int = 1
 
-var _timer: float = 0
-var _direction: Vector2 = Vector2.RIGHT
+var _timer := 0.0
+var _target := Vector3.ZERO
 
-func reset(rng: RandomNumberGenerator) -> void:
-	_timer = rng.randf_range(turn_interval_min, turn_interval_max)
-	_direction = Vector2(rng.randf_range(-1, 1), rng.randf_range(-1, 1))
-	
-	if _direction.is_zero_approx():
-		_direction = Vector2.RIGHT
-	
-	_direction = _direction.normalized()
+func _init():
+	behaviour_type = BehaviourType.GOAL
 
-func sample(_context: Dictionary, delta: float, rng: RandomNumberGenerator) -> Vector2:
+func get_target(context: Dictionary, delta: float, rng: RandomNumberGenerator):
 	_timer -= delta
-	
+
 	if _timer <= 0.0:
-		_timer = rng.randf_range(turn_interval_min, turn_interval_max)
-		
-		var target := Vector2(rng.randf_range(-1.0, 1.0), rng.randf_range(-1.0, 1.0))
-		
-		if not target.is_zero_approx():
-			_direction = _direction.lerp(target.normalized(), 1.0 - turn_bias).normalized()
+		_timer = rng.randf_range(interval_min, interval_max)
 
-	var noise := Vector2(
-		rng.randf_range(-jitter, jitter),
-		rng.randf_range(-jitter, jitter)
-	)
-	
-	var output = _direction + noise
+		var agent: NavigationAgent3D = context["nav_agent"]
+		var nav_map: RID = agent.get_navigation_map()
 
-	return output.normalized() if output.length_squared() > 1 else output
+		if nav_map.is_valid():
+			_target = _get_local_nav_point(agent, context["global_position"], 10.0, rng)
+
+	return _target
+
+func _get_local_nav_point(agent: NavigationAgent3D, origin: Vector3, radius: float, rng: RandomNumberGenerator) -> Vector3:
+	var nav_map: RID = agent.get_navigation_map()
+
+	for i in 8: # limited attempts
+		var offset = Vector3(
+			rng.randf_range(-radius, radius),
+			0,
+			rng.randf_range(-radius, radius)
+		)
+
+		var candidate = origin + offset
+		var closest = NavigationServer3D.map_get_closest_point(nav_map, candidate)
+
+		if closest.distance_to(origin) <= radius:
+			return closest
+
+	# fallback
+	return origin

@@ -26,5 +26,7 @@ hframes = 3
 vframes = 4
 frame = 1
 
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=556157350]
+
 [node name="NPCBrain" type="Node" parent="." unique_id=2081371310]
 script = ExtResource("3_2xyo8")
