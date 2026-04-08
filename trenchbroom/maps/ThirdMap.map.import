@@ -1,0 +1,14 @@
+[remap]
+
+importer="func_godot.map"
+type="Resource"
+uid="uid://dxd32frfgskhs"
+path="res://.godot/imported/ThirdMap.map-43c4b4d3e0fd94ebe65c0e12b4e0b46e.tres"
+
+[deps]
+
+source_file="res://trenchbroom/maps/ThirdMap.map"
+dest_files=["res://.godot/imported/ThirdMap.map-43c4b4d3e0fd94ebe65c0e12b4e0b46e.tres"]
+
+[params]
+

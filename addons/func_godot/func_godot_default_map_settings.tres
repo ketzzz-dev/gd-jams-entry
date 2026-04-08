@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="FuncGodotMapSettings" load_steps=5 format=3 uid="uid://bkhxcqsquw1yg"]
+
+[ext_resource type="Material" uid="uid://cvex6toty8yn7" path="res://addons/func_godot/textures/default_material.tres" id="1_576s4"]
+[ext_resource type="Script" uid="uid://38q6k0ctahjn" path="res://addons/func_godot/src/map/func_godot_map_settings.gd" id="1_dlf23"]
+[ext_resource type="Resource" uid="uid://crgpdahjaj" path="res://addons/func_godot/fgd/func_godot_fgd.tres" id="2_wpetf"]
+[ext_resource type="Script" uid="uid://cij36hpqc46c" path="res://addons/func_godot/src/import/quake_wad_file.gd" id="4_y2kmr"]
+
+[resource]
+script = ExtResource("1_dlf23")
+inverse_scale_factor = 32.0
+entity_fgd = ExtResource("2_wpetf")
+use_groups_hierarchy = false
+uv_unwrap_texel_size = 2.0
+entity_node_groups = Array[String]([])
+entity_name_property = ""
+entity_smoothing_property = "_phong"
+entity_smoothing_angle_property = "_phong_angle"
+vertex_merge_distance_property = "_vertex_merge_distance"
+cull_interior_faces_property = "_cull_interior_faces"
+base_texture_dir = "res://textures"
+texture_file_extensions = Array[String](["png", "jpg", "jpeg", "bmp", "tga", "webp"])
+clip_texture = "clip"
+skip_texture = "skip"
+origin_texture = "origin"
+texture_wads = Array[ExtResource("4_y2kmr")]([])
+base_material_dir = ""
+material_file_extension = "tres"
+default_material = ExtResource("1_576s4")
+default_material_albedo_uniform = ""
+shader_material_uniform_map_patterns = Dictionary[String, String]({})
+albedo_map_pattern = "%s_albedo"
+normal_map_pattern = "%s_normal"
+metallic_map_pattern = "%s_metallic"
+roughness_map_pattern = "%s_roughness"
+emission_map_pattern = "%s_emission"
+ao_map_pattern = "%s_ao"
+height_map_pattern = "%s_height"
+orm_map_pattern = "%s_orm"
+save_generated_materials = true
