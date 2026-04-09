@@ -1,32 +1,32 @@
 [gd_scene format=4 uid="uid://hy2u3ytapgh5"]
 
-[ext_resource type="Script" uid="uid://cwu5cf7a0awcd" path="res://addons/func_godot/src/map/func_godot_map.gd" id="1_iy2lp"]
-[ext_resource type="Resource" uid="uid://e3qo6jweficb" path="res://trenchbroom/GDJamsEntry_mapsettings.tres" id="2_1o1w2"]
-[ext_resource type="Material" uid="uid://b731cbm6wpndj" path="res://trenchbroom/textures/greybox_dark_solid.tres" id="3_mq0ti"]
-[ext_resource type="Material" uid="uid://n6pcpljv8dgk" path="res://trenchbroom/textures/greybox_light_grid.tres" id="4_cvgg8"]
-[ext_resource type="Material" uid="uid://cxdquvihoxd8f" path="res://trenchbroom/textures/wall_cracked_2.tres" id="5_mq0ti"]
-[ext_resource type="Material" uid="uid://3hi88fk8riws" path="res://trenchbroom/textures/greybox_orange_grid.tres" id="6_wmh40"]
-[ext_resource type="Material" uid="uid://b4xfq8sws56i2" path="res://trenchbroom/textures/grass_02.tres" id="7_cvgg8"]
-[ext_resource type="Material" uid="uid://dxx2eq11k7vdv" path="res://trenchbroom/textures/siding_metal_red_01.tres" id="8_0iche"]
-[ext_resource type="Script" uid="uid://b36xo5pajw5gn" path="res://scripts/camera.gd" id="8_1o1w2"]
-[ext_resource type="Material" uid="uid://t0mut14ccg4o" path="res://trenchbroom/textures/bricks_modern_01.tres" id="9_khkqk"]
-[ext_resource type="Material" uid="uid://20qfev1gd4yq" path="res://trenchbroom/textures/greybox_grey_solid_2.tres" id="10_v4qs6"]
-[ext_resource type="Material" uid="uid://c7wu2k1m3ykxq" path="res://trenchbroom/textures/siding_wood_05.tres" id="11_4vi5j"]
-[ext_resource type="Material" uid="uid://djl2eolfir57e" path="res://trenchbroom/textures/wall_stucco_03.tres" id="12_wmh40"]
-[ext_resource type="Material" uid="uid://dcxho5erwdx1v" path="res://trenchbroom/textures/wall_plaster_pealing.tres" id="13_kxdca"]
-[ext_resource type="Material" uid="uid://dtvnvhlmsbtb8" path="res://trenchbroom/textures/wall_plaster_worn_2.tres" id="14_kmgi1"]
-[ext_resource type="Material" uid="uid://ck4a58tb8wjrv" path="res://trenchbroom/textures/wall_stucco_01.tres" id="15_0iche"]
-[ext_resource type="Material" uid="uid://c7it75wisp1cf" path="res://trenchbroom/textures/wall_halfconcrete_02.tres" id="16_885db"]
-[ext_resource type="Material" uid="uid://2myexk4np3f5" path="res://trenchbroom/textures/concrete_01.tres" id="17_khkqk"]
-[ext_resource type="Material" uid="uid://cmovtyp7s6xuh" path="res://trenchbroom/textures/siding_gray_01.tres" id="18_v4qs6"]
-[ext_resource type="Material" uid="uid://bt3m2oq21e3xi" path="res://trenchbroom/textures/siding_blue_01.tres" id="19_sf68x"]
-[ext_resource type="Material" uid="uid://bxpowwigon3wg" path="res://trenchbroom/textures/wall_grunge.tres" id="20_8js0f"]
-[ext_resource type="Material" uid="uid://c8vkyopr00wk" path="res://trenchbroom/textures/siding_tan_01.tres" id="21_kxdca"]
-[ext_resource type="Material" uid="uid://dvwsdkplpti1g" path="res://trenchbroom/textures/siding_wood_06.tres" id="22_5usgh"]
-[ext_resource type="Material" uid="uid://qtqj4lyt8kvo" path="res://trenchbroom/textures/wall_halfconcrete_03.tres" id="23_77lxb"]
-[ext_resource type="Material" uid="uid://xca7x30aq45j" path="res://trenchbroom/textures/wall_halfconcrete_05.tres" id="24_tosni"]
-[ext_resource type="Material" uid="uid://dl1xgu6k86m40" path="res://trenchbroom/textures/wall_cracked_1.tres" id="25_885db"]
-[ext_resource type="PackedScene" uid="uid://chmj84b7x4b1n" path="res://props/window_boarded.tscn" id="26_2fwqd"]
+[ext_resource type="Script" uid="uid://cwu5cf7a0awcd" path="res://addons/func_godot/src/map/func_godot_map.gd" id="1_x76kj"]
+[ext_resource type="Resource" uid="uid://e3qo6jweficb" path="res://trenchbroom/GDJamsEntry_mapsettings.tres" id="2_g16gf"]
+[ext_resource type="Material" uid="uid://b731cbm6wpndj" path="res://trenchbroom/textures/greybox_dark_solid.tres" id="3_xm8cr"]
+[ext_resource type="Material" uid="uid://n6pcpljv8dgk" path="res://trenchbroom/textures/greybox_light_grid.tres" id="4_3abss"]
+[ext_resource type="Material" uid="uid://cxdquvihoxd8f" path="res://trenchbroom/textures/wall_cracked_2.tres" id="5_clh4j"]
+[ext_resource type="Material" uid="uid://3hi88fk8riws" path="res://trenchbroom/textures/greybox_orange_grid.tres" id="6_bb1qq"]
+[ext_resource type="Material" uid="uid://b4xfq8sws56i2" path="res://trenchbroom/textures/grass_02.tres" id="7_xn654"]
+[ext_resource type="Material" uid="uid://dxx2eq11k7vdv" path="res://trenchbroom/textures/siding_metal_red_01.tres" id="8_rsgcc"]
+[ext_resource type="Material" uid="uid://t0mut14ccg4o" path="res://trenchbroom/textures/bricks_modern_01.tres" id="9_4rqeb"]
+[ext_resource type="Material" uid="uid://20qfev1gd4yq" path="res://trenchbroom/textures/greybox_grey_solid_2.tres" id="10_nb285"]
+[ext_resource type="Material" uid="uid://c7wu2k1m3ykxq" path="res://trenchbroom/textures/siding_wood_05.tres" id="11_yt73d"]
+[ext_resource type="Material" uid="uid://djl2eolfir57e" path="res://trenchbroom/textures/wall_stucco_03.tres" id="12_ai0u6"]
+[ext_resource type="Material" uid="uid://dcxho5erwdx1v" path="res://trenchbroom/textures/wall_plaster_pealing.tres" id="13_kl1eu"]
+[ext_resource type="Material" uid="uid://dtvnvhlmsbtb8" path="res://trenchbroom/textures/wall_plaster_worn_2.tres" id="14_60vg8"]
+[ext_resource type="Material" uid="uid://ck4a58tb8wjrv" path="res://trenchbroom/textures/wall_stucco_01.tres" id="15_ts5in"]
+[ext_resource type="Material" uid="uid://c7it75wisp1cf" path="res://trenchbroom/textures/wall_halfconcrete_02.tres" id="16_jpf1t"]
+[ext_resource type="Material" uid="uid://2myexk4np3f5" path="res://trenchbroom/textures/concrete_01.tres" id="17_pt3fa"]
+[ext_resource type="Material" uid="uid://cmovtyp7s6xuh" path="res://trenchbroom/textures/siding_gray_01.tres" id="18_llocf"]
+[ext_resource type="Material" uid="uid://bt3m2oq21e3xi" path="res://trenchbroom/textures/siding_blue_01.tres" id="19_rmhpu"]
+[ext_resource type="Material" uid="uid://bxpowwigon3wg" path="res://trenchbroom/textures/wall_grunge.tres" id="20_3p8xg"]
+[ext_resource type="Material" uid="uid://c8vkyopr00wk" path="res://trenchbroom/textures/siding_tan_01.tres" id="21_vk74e"]
+[ext_resource type="Material" uid="uid://dvwsdkplpti1g" path="res://trenchbroom/textures/siding_wood_06.tres" id="22_r24ol"]
+[ext_resource type="Material" uid="uid://qtqj4lyt8kvo" path="res://trenchbroom/textures/wall_halfconcrete_03.tres" id="23_oqdo1"]
+[ext_resource type="Material" uid="uid://xca7x30aq45j" path="res://trenchbroom/textures/wall_halfconcrete_05.tres" id="24_v0iwd"]
+[ext_resource type="Material" uid="uid://dl1xgu6k86m40" path="res://trenchbroom/textures/wall_cracked_1.tres" id="25_71sn8"]
+[ext_resource type="PackedScene" uid="uid://chmj84b7x4b1n" path="res://props/window_boarded.tscn" id="26_2c5uy"]
+[ext_resource type="Script" uid="uid://b36xo5pajw5gn" path="res://scripts/camera.gd" id="27_mr4sy"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_667kp"]
 _surfaces = [{
@@ -35,7 +35,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 396,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA+AD8AQABBAEIAQABCAEMARABFAEYARABGAEcASABJAEoASABKAEsATABNAE4ATABOAE8AUABRAFIAUABSAFMAVABVAFYAVABWAFcAWABZAFoAWABaAFsAXABdAF4AXABeAF8AYABhAGIAYABiAGMAZABlAGYAZABmAGcAaABpAGoAaABqAGsAbABtAG4AbABuAG8AcABxAHIAcAByAHMAdAB1AHYAdAB2AHcAeAB5AHoAeAB6AHsAfAB9AH4AfAB+AH8AgACBAIIAgACCAIMAhACFAIYAhACGAIcAiACJAIoAiACKAIsAjACNAI4AjACOAI8AkACRAJIAkACSAJMAlACVAJYAlACWAJcAmACZAJoAmACaAJsAnACdAJ4AnACeAJ8AoAChAKIAoACiAKMApAClAKYApACmAKcAqACpAKoAqACqAKsArACtAK4ArACuAK8AsACxALIAsACyALMAtAC1ALYAtAC2ALcAuAC5ALoAuAC6ALsAvAC9AL4AvAC+AL8AwADBAMIAwADCAMMAxADFAMYAxADGAMcAyADJAMoAyADKAMsAzADNAM4AzADOAM8A0ADRANIA0ADSANMA1ADVANYA1ADWANcA2ADZANoA2ADaANsA3ADdAN4A3ADeAN8A4ADhAOIA4ADiAOMA5ADlAOYA5ADmAOcA6ADpAOoA6ADqAOsA7ADtAO4A7ADuAO8A8ADxAPIA8ADyAPMA9AD1APYA9AD2APcA+AD5APoA+AD6APsA/AD9AP4A/AD+AP8AAAEBAQIBAAECAQMBBAEFAQYBBAEGAQcB"),
-"material": ExtResource("3_mq0ti"),
+"material": ExtResource("3_xm8cr"),
 "name": "greybox_dark_solid",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -47,7 +47,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 528,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA+AD8AQABBAEIAQABCAEMARABFAEYARABGAEcASABJAEoASABKAEsATABNAE4ATABOAE8AUABRAFIAUABSAFMAVABVAFYAVABWAFcAWABZAFoAWABaAFsAXABdAF4AXABeAF8AYABhAGIAYABiAGMAZABlAGYAZABmAGcAaABpAGoAaABqAGsAbABtAG4AbABuAG8AcABxAHIAcAByAHMAdAB1AHYAdAB2AHcAeAB5AHoAeAB6AHsAfAB9AH4AfAB+AH8AgACBAIIAgACCAIMAhACFAIYAhACGAIcAiACJAIoAiACKAIsAjACNAI4AjACOAI8AkACRAJIAkACSAJMAlACVAJYAlACWAJcAmACZAJoAmACaAJsAnACdAJ4AnACeAJ8AoAChAKIAoACiAKMApAClAKYApACmAKcAqACpAKoAqACqAKsArACtAK4ArACuAK8AsACxALIAsACyALMAtAC1ALYAtAC2ALcAuAC5ALoAuAC6ALsAvAC9AL4AvAC+AL8AwADBAMIAwADCAMMAxADFAMYAxADGAMcAyADJAMoAyADKAMsAzADNAM4AzADOAM8A0ADRANIA0ADSANMA1ADVANYA1ADWANcA2ADZANoA2ADaANsA3ADdAN4A3ADeAN8A4ADhAOIA4ADiAOMA5ADlAOYA5ADmAOcA6ADpAOoA6ADqAOsA7ADtAO4A7ADuAO8A8ADxAPIA8ADyAPMA9AD1APYA9AD2APcA+AD5APoA+AD6APsA/AD9AP4A/AD+AP8AAAEBAQIBAAECAQMBBAEFAQYBBAEGAQcBCAEJAQoBCAEKAQsBDAENAQ4BDAEOAQ8BEAERARIBEAESARMBFAEVARYBFAEWARcBGAEZARoBGAEaARsBHAEdAR4BHAEeAR8BIAEhASIBIAEiASMBJAElASYBJAEmAScBKAEpASoBKAEqASsBLAEtAS4BLAEuAS8BMAExATIBMAEyATMBNAE1ATYBNAE2ATcBOAE5AToBOAE6ATsBPAE9AT4BPAE+AT8BQAFBAUIBQAFCAUMBRAFFAUYBRAFGAUcBSAFJAUoBSAFKAUsBTAFNAU4BTAFOAU8BUAFRAVIBUAFSAVMBVAFVAVYBVAFWAVcBWAFZAVoBWAFaAVsBXAFdAV4BXAFeAV8B"),
-"material": ExtResource("4_cvgg8"),
+"material": ExtResource("4_3abss"),
 "name": "greybox_light_grid",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -59,7 +59,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 120,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA+AD8AQABBAEIAQABCAEMARABFAEYARABGAEcASABJAEoASABKAEsATABNAE4ATABOAE8A"),
-"material": ExtResource("5_mq0ti"),
+"material": ExtResource("5_clh4j"),
 "name": "wall_cracked_2",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -71,7 +71,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 438,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA+AD8AQABBAEIAQABCAEMARABFAEYARABGAEcASABJAEoASABKAEsATABNAE4ATABOAE8AUABRAFIAUABSAFMAVABVAFYAVABWAFcAWABZAFoAWABaAFsAXABdAF4AXABeAF8AYABhAGIAYABiAGMAZABlAGYAZABmAGcAaABpAGoAaABqAGsAbABtAG4AbABuAG8AcABxAHIAcAByAHMAdAB1AHYAdAB2AHcAeAB5AHoAeAB6AHsAfAB9AH4AfAB+AH8AgACBAIIAgACCAIMAhACFAIYAhACGAIcAiACJAIoAiACKAIsAjACNAI4AjACOAI8AkACRAJIAkACSAJMAlACVAJYAlACWAJcAmACZAJoAmACaAJsAnACdAJ4AnACeAJ8AoAChAKIAoACiAKMApAClAKYApACmAKcAqACpAKoAqACqAKsArACtAK4ArACuAK8AsACxALIAsACyALMAtAC1ALYAtAC2ALcAuAC5ALoAuAC6ALsAvAC9AL4AvAC+AL8AwADBAMIAwADCAMMAxADFAMYAxADGAMcAyADJAMoAyADKAMsAzADNAM4AzADOAM8A0ADRANIA0ADSANMA1ADVANYA1ADWANcA2ADZANoA2ADaANsA3ADdAN4A3ADeAN8A4ADhAOIA4ADiAOMA5ADlAOYA5ADmAOcA6ADpAOoA6ADqAOsA7ADtAO4A7ADuAO8A8ADxAPIA8ADyAPMA9AD1APYA9AD2APcA+AD5APoA+AD6APsA/AD9AP4A/AD+AP8AAAEBAQIBAAECAQMBBAEFAQYBBAEGAQcBCAEJAQoBCAEKAQsBDAENAQ4BDAEOAQ8BEAERARIBEAESARMBFAEVARYBFAEWARcBGAEZARoBGAEaARsBHAEdAR4BHAEeAR8BIAEhASIBIAEiASMB"),
-"material": ExtResource("6_wmh40"),
+"material": ExtResource("6_bb1qq"),
 "name": "greybox_orange_grid",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -83,7 +83,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 72,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8A"),
-"material": ExtResource("7_cvgg8"),
+"material": ExtResource("7_xn654"),
 "name": "grass_02",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -95,7 +95,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 96,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMwA0ADUAMwA1ADYANwA4ADkANwA5ADoAOwA8AD0AOwA9AD4APwBAAEEA"),
-"material": ExtResource("8_0iche"),
+"material": ExtResource("8_rsgcc"),
 "name": "siding_metal_red_01",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -107,7 +107,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 102,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA+AD8AQABBAEIAQABCAEMA"),
-"material": ExtResource("9_khkqk"),
+"material": ExtResource("9_4rqeb"),
 "name": "bricks_modern_01",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -119,7 +119,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAACAAMA"),
-"material": ExtResource("10_v4qs6"),
+"material": ExtResource("10_nb285"),
 "name": "greybox_grey_solid_2",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -131,7 +131,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 24,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8A"),
-"material": ExtResource("11_4vi5j"),
+"material": ExtResource("11_yt73d"),
 "name": "siding_wood_05",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -143,7 +143,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 84,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcA"),
-"material": ExtResource("12_wmh40"),
+"material": ExtResource("12_ai0u6"),
 "name": "wall_stucco_03",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -155,7 +155,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 78,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMA"),
-"material": ExtResource("13_kxdca"),
+"material": ExtResource("13_kl1eu"),
 "name": "wall_plaster_pealing",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -167,7 +167,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 42,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsA"),
-"material": ExtResource("14_kmgi1"),
+"material": ExtResource("14_60vg8"),
 "name": "wall_plaster_worn_2",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -179,7 +179,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 42,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsA"),
-"material": ExtResource("15_0iche"),
+"material": ExtResource("15_ts5in"),
 "name": "wall_stucco_01",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -191,7 +191,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 108,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA+AD8AQABBAEIAQABCAEMARABFAEYARABGAEcA"),
-"material": ExtResource("16_885db"),
+"material": ExtResource("16_jpf1t"),
 "name": "wall_halfconcrete_02",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -203,7 +203,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 6,
 "index_data": PackedByteArray("AAABAAIAAAACAAMA"),
-"material": ExtResource("17_khkqk"),
+"material": ExtResource("17_pt3fa"),
 "name": "concrete_01",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -215,7 +215,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 72,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8A"),
-"material": ExtResource("18_v4qs6"),
+"material": ExtResource("18_llocf"),
 "name": "siding_gray_01",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -227,7 +227,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcA"),
-"material": ExtResource("19_sf68x"),
+"material": ExtResource("19_rmhpu"),
 "name": "siding_blue_01",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -239,7 +239,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 72,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8A"),
-"material": ExtResource("20_8js0f"),
+"material": ExtResource("20_3p8xg"),
 "name": "wall_grunge",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -251,7 +251,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 24,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8A"),
-"material": ExtResource("21_kxdca"),
+"material": ExtResource("21_vk74e"),
 "name": "siding_tan_01",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -263,7 +263,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 36,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACwAMAA0ADgAPABAADgAQABEAEgATABQAEgAUABUAFgAXABgAGQAaABsA"),
-"material": ExtResource("22_5usgh"),
+"material": ExtResource("22_r24ol"),
 "name": "siding_wood_06",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -275,7 +275,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 66,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsA"),
-"material": ExtResource("23_77lxb"),
+"material": ExtResource("23_oqdo1"),
 "name": "wall_halfconcrete_03",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -287,7 +287,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 12,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcA"),
-"material": ExtResource("24_tosni"),
+"material": ExtResource("24_v0iwd"),
 "name": "wall_halfconcrete_05",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -299,7 +299,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 252,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcAKAApACoAKAAqACsALAAtAC4ALAAuAC8AMAAxADIAMAAyADMANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA+AD8AQABBAEIAQABCAEMARABFAEYARABGAEcASABJAEoASABKAEsATABNAE4ATABOAE8AUABRAFIAUABSAFMAVABVAFYAVABWAFcAWABZAFoAWABaAFsAXABdAF4AXABeAF8AYABhAGIAYABiAGMAZABlAGYAZABmAGcAaABpAGoAaABqAGsAbABtAG4AbABuAG8AcABxAHIAcAByAHMAdAB1AHYAdAB2AHcAeAB5AHoAeAB6AHsAfAB9AH4AfAB+AH8AgACBAIIAgACCAIMAhACFAIYAhACGAIcAiACJAIoAiACKAIsAjACNAI4AjACOAI8AkACRAJIAkACSAJMAlACVAJYAlACWAJcAmACZAJoAmACaAJsAnACdAJ4AnACeAJ8AoAChAKIAoACiAKMApAClAKYApACmAKcA"),
-"material": ExtResource("25_885db"),
+"material": ExtResource("25_71sn8"),
 "name": "wall_cracked_1",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -538,9 +538,9 @@ points = PackedVector3Array(13.75, 1.6992188, 3.8867188, 13.75, 0.54296875, 3.88
 [node name="Mainmap" type="Node3D" unique_id=918985117]
 
 [node name="FuncGodotMap" type="Node3D" parent="." unique_id=1219445573]
-script = ExtResource("1_iy2lp")
+script = ExtResource("1_x76kj")
 local_map_file = "uid://xaspg7e5606m"
-map_settings = ExtResource("2_1o1w2")
+map_settings = ExtResource("2_g16gf")
 metadata/_custom_type_script = "uid://cwu5cf7a0awcd"
 
 [node name="entity_0_worldspawn" type="StaticBody3D" parent="FuncGodotMap" unique_id=1792100539]
@@ -777,497 +777,497 @@ shape = SubResource("ConvexPolygonShape3D_qov4g")
 [node name="entity_0_brush_75_collision_shape" type="CollisionShape3D" parent="FuncGodotMap/entity_0_worldspawn" unique_id=1430077723]
 shape = SubResource("ConvexPolygonShape3D_dpkws")
 
-[node name="entity_1_window_boarded" parent="FuncGodotMap" unique_id=1747962583 instance=ExtResource("26_2fwqd")]
+[node name="entity_1_window_boarded" parent="FuncGodotMap" unique_id=1747962583 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 10.8125, 2.5625, 10.714844)
 
-[node name="entity_2_window_boarded" parent="FuncGodotMap" unique_id=2146203468 instance=ExtResource("26_2fwqd")]
+[node name="entity_2_window_boarded" parent="FuncGodotMap" unique_id=2146203468 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 12.78125, 2.5625, 10.714844)
 
-[node name="entity_3_window_boarded" parent="FuncGodotMap" unique_id=1488634533 instance=ExtResource("26_2fwqd")]
+[node name="entity_3_window_boarded" parent="FuncGodotMap" unique_id=1488634533 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 14.78125, 2.5625, 10.714844)
 
-[node name="entity_4_window_boarded" parent="FuncGodotMap" unique_id=390539532 instance=ExtResource("26_2fwqd")]
+[node name="entity_4_window_boarded" parent="FuncGodotMap" unique_id=390539532 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 14.78125, 4.3125, 10.714844)
 
-[node name="entity_5_window_boarded" parent="FuncGodotMap" unique_id=2120310785 instance=ExtResource("26_2fwqd")]
+[node name="entity_5_window_boarded" parent="FuncGodotMap" unique_id=2120310785 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 12.78125, 4.3125, 10.714844)
 
-[node name="entity_6_window_boarded" parent="FuncGodotMap" unique_id=1371784192 instance=ExtResource("26_2fwqd")]
+[node name="entity_6_window_boarded" parent="FuncGodotMap" unique_id=1371784192 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 10.8125, 4.3125, 10.714844)
 
-[node name="entity_7_window_boarded" parent="FuncGodotMap" unique_id=318460740 instance=ExtResource("26_2fwqd")]
+[node name="entity_7_window_boarded" parent="FuncGodotMap" unique_id=318460740 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 14.78125, 6.0625, 10.714844)
 
-[node name="entity_8_window_boarded" parent="FuncGodotMap" unique_id=604079716 instance=ExtResource("26_2fwqd")]
+[node name="entity_8_window_boarded" parent="FuncGodotMap" unique_id=604079716 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 12.78125, 6.0625, 10.714844)
 
-[node name="entity_9_window_boarded" parent="FuncGodotMap" unique_id=976589186 instance=ExtResource("26_2fwqd")]
+[node name="entity_9_window_boarded" parent="FuncGodotMap" unique_id=976589186 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 10.8125, 6.0625, 10.714844)
 
-[node name="entity_10_window_boarded" parent="FuncGodotMap" unique_id=1648688320 instance=ExtResource("26_2fwqd")]
+[node name="entity_10_window_boarded" parent="FuncGodotMap" unique_id=1648688320 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 14.78125, 7.8125, 10.714844)
 
-[node name="entity_11_window_boarded" parent="FuncGodotMap" unique_id=2068421768 instance=ExtResource("26_2fwqd")]
+[node name="entity_11_window_boarded" parent="FuncGodotMap" unique_id=2068421768 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 12.78125, 7.8125, 10.714844)
 
-[node name="entity_12_window_boarded" parent="FuncGodotMap" unique_id=1177105760 instance=ExtResource("26_2fwqd")]
+[node name="entity_12_window_boarded" parent="FuncGodotMap" unique_id=1177105760 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 10.8125, 7.8125, 10.714844)
 
-[node name="entity_13_window_boarded" parent="FuncGodotMap" unique_id=1452961400 instance=ExtResource("26_2fwqd")]
+[node name="entity_13_window_boarded" parent="FuncGodotMap" unique_id=1452961400 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 14.78125, 9.5625, 10.714844)
 
-[node name="entity_14_window_boarded" parent="FuncGodotMap" unique_id=1285803730 instance=ExtResource("26_2fwqd")]
+[node name="entity_14_window_boarded" parent="FuncGodotMap" unique_id=1285803730 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 12.78125, 9.5625, 10.714844)
 
-[node name="entity_15_window_boarded" parent="FuncGodotMap" unique_id=1489954425 instance=ExtResource("26_2fwqd")]
+[node name="entity_15_window_boarded" parent="FuncGodotMap" unique_id=1489954425 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 10.8125, 9.5625, 10.714844)
 
-[node name="entity_16_window_boarded" parent="FuncGodotMap" unique_id=2097664739 instance=ExtResource("26_2fwqd")]
+[node name="entity_16_window_boarded" parent="FuncGodotMap" unique_id=2097664739 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 9.5625, 11.71875)
 
-[node name="entity_17_window_boarded" parent="FuncGodotMap" unique_id=1928007980 instance=ExtResource("26_2fwqd")]
+[node name="entity_17_window_boarded" parent="FuncGodotMap" unique_id=1928007980 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 9.5625, 13.46875)
 
-[node name="entity_18_window_boarded" parent="FuncGodotMap" unique_id=1229839290 instance=ExtResource("26_2fwqd")]
+[node name="entity_18_window_boarded" parent="FuncGodotMap" unique_id=1229839290 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 9.5625, 15.1875)
 
-[node name="entity_19_window_boarded" parent="FuncGodotMap" unique_id=365238581 instance=ExtResource("26_2fwqd")]
+[node name="entity_19_window_boarded" parent="FuncGodotMap" unique_id=365238581 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 7.8125, 15.1875)
 
-[node name="entity_20_window_boarded" parent="FuncGodotMap" unique_id=981330621 instance=ExtResource("26_2fwqd")]
+[node name="entity_20_window_boarded" parent="FuncGodotMap" unique_id=981330621 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 7.8125, 13.46875)
 
-[node name="entity_21_window_boarded" parent="FuncGodotMap" unique_id=1962561825 instance=ExtResource("26_2fwqd")]
+[node name="entity_21_window_boarded" parent="FuncGodotMap" unique_id=1962561825 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 7.8125, 11.71875)
 
-[node name="entity_22_window_boarded" parent="FuncGodotMap" unique_id=1728662466 instance=ExtResource("26_2fwqd")]
+[node name="entity_22_window_boarded" parent="FuncGodotMap" unique_id=1728662466 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 6.0625, 15.1875)
 
-[node name="entity_23_window_boarded" parent="FuncGodotMap" unique_id=419432838 instance=ExtResource("26_2fwqd")]
+[node name="entity_23_window_boarded" parent="FuncGodotMap" unique_id=419432838 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 6.0625, 13.46875)
 
-[node name="entity_24_window_boarded" parent="FuncGodotMap" unique_id=1669783834 instance=ExtResource("26_2fwqd")]
+[node name="entity_24_window_boarded" parent="FuncGodotMap" unique_id=1669783834 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 6.0625, 11.71875)
 
-[node name="entity_25_window_boarded" parent="FuncGodotMap" unique_id=349421350 instance=ExtResource("26_2fwqd")]
+[node name="entity_25_window_boarded" parent="FuncGodotMap" unique_id=349421350 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 4.3125, 15.1875)
 
-[node name="entity_26_window_boarded" parent="FuncGodotMap" unique_id=250324547 instance=ExtResource("26_2fwqd")]
+[node name="entity_26_window_boarded" parent="FuncGodotMap" unique_id=250324547 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 4.3125, 13.46875)
 
-[node name="entity_27_window_boarded" parent="FuncGodotMap" unique_id=1700729550 instance=ExtResource("26_2fwqd")]
+[node name="entity_27_window_boarded" parent="FuncGodotMap" unique_id=1700729550 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 4.3125, 11.71875)
 
-[node name="entity_28_window_boarded" parent="FuncGodotMap" unique_id=1064703160 instance=ExtResource("26_2fwqd")]
+[node name="entity_28_window_boarded" parent="FuncGodotMap" unique_id=1064703160 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 2.5625, 15.1875)
 
-[node name="entity_29_window_boarded" parent="FuncGodotMap" unique_id=500416141 instance=ExtResource("26_2fwqd")]
+[node name="entity_29_window_boarded" parent="FuncGodotMap" unique_id=500416141 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 2.5625, 13.46875)
 
-[node name="entity_30_window_boarded" parent="FuncGodotMap" unique_id=396959145 instance=ExtResource("26_2fwqd")]
+[node name="entity_30_window_boarded" parent="FuncGodotMap" unique_id=396959145 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 9.464844, 2.5625, 11.71875)
 
-[node name="entity_31_window_boarded" parent="FuncGodotMap" unique_id=1005357118 instance=ExtResource("26_2fwqd")]
+[node name="entity_31_window_boarded" parent="FuncGodotMap" unique_id=1005357118 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 9.5625, 15.03125)
 
-[node name="entity_32_window_boarded" parent="FuncGodotMap" unique_id=193418582 instance=ExtResource("26_2fwqd")]
+[node name="entity_32_window_boarded" parent="FuncGodotMap" unique_id=193418582 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 9.5625, 13.28125)
 
-[node name="entity_33_window_boarded" parent="FuncGodotMap" unique_id=1141538220 instance=ExtResource("26_2fwqd")]
+[node name="entity_33_window_boarded" parent="FuncGodotMap" unique_id=1141538220 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 9.5625, 11.5625)
 
-[node name="entity_34_window_boarded" parent="FuncGodotMap" unique_id=289088534 instance=ExtResource("26_2fwqd")]
+[node name="entity_34_window_boarded" parent="FuncGodotMap" unique_id=289088534 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 7.8125, 11.5625)
 
-[node name="entity_35_window_boarded" parent="FuncGodotMap" unique_id=2007154915 instance=ExtResource("26_2fwqd")]
+[node name="entity_35_window_boarded" parent="FuncGodotMap" unique_id=2007154915 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 7.8125, 13.28125)
 
-[node name="entity_36_window_boarded" parent="FuncGodotMap" unique_id=704619436 instance=ExtResource("26_2fwqd")]
+[node name="entity_36_window_boarded" parent="FuncGodotMap" unique_id=704619436 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 7.8125, 15.03125)
 
-[node name="entity_37_window_boarded" parent="FuncGodotMap" unique_id=710282562 instance=ExtResource("26_2fwqd")]
+[node name="entity_37_window_boarded" parent="FuncGodotMap" unique_id=710282562 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 6.0625, 11.5625)
 
-[node name="entity_38_window_boarded" parent="FuncGodotMap" unique_id=2050355703 instance=ExtResource("26_2fwqd")]
+[node name="entity_38_window_boarded" parent="FuncGodotMap" unique_id=2050355703 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 6.0625, 13.28125)
 
-[node name="entity_39_window_boarded" parent="FuncGodotMap" unique_id=159451084 instance=ExtResource("26_2fwqd")]
+[node name="entity_39_window_boarded" parent="FuncGodotMap" unique_id=159451084 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 6.0625, 15.03125)
 
-[node name="entity_40_window_boarded" parent="FuncGodotMap" unique_id=1818623807 instance=ExtResource("26_2fwqd")]
+[node name="entity_40_window_boarded" parent="FuncGodotMap" unique_id=1818623807 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 4.3125, 11.5625)
 
-[node name="entity_41_window_boarded" parent="FuncGodotMap" unique_id=546332870 instance=ExtResource("26_2fwqd")]
+[node name="entity_41_window_boarded" parent="FuncGodotMap" unique_id=546332870 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 4.3125, 13.28125)
 
-[node name="entity_42_window_boarded" parent="FuncGodotMap" unique_id=1194740267 instance=ExtResource("26_2fwqd")]
+[node name="entity_42_window_boarded" parent="FuncGodotMap" unique_id=1194740267 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 4.3125, 15.03125)
 
-[node name="entity_43_window_boarded" parent="FuncGodotMap" unique_id=1293523788 instance=ExtResource("26_2fwqd")]
+[node name="entity_43_window_boarded" parent="FuncGodotMap" unique_id=1293523788 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 2.5625, 11.5625)
 
-[node name="entity_44_window_boarded" parent="FuncGodotMap" unique_id=1185249227 instance=ExtResource("26_2fwqd")]
+[node name="entity_44_window_boarded" parent="FuncGodotMap" unique_id=1185249227 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 2.5625, 13.28125)
 
-[node name="entity_45_window_boarded" parent="FuncGodotMap" unique_id=1288641501 instance=ExtResource("26_2fwqd")]
+[node name="entity_45_window_boarded" parent="FuncGodotMap" unique_id=1288641501 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.035156, 2.5625, 15.03125)
 
-[node name="entity_46_window_boarded" parent="FuncGodotMap" unique_id=868938685 instance=ExtResource("26_2fwqd")]
+[node name="entity_46_window_boarded" parent="FuncGodotMap" unique_id=868938685 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.71875, 9.5625, 16.035156)
 
-[node name="entity_47_window_boarded" parent="FuncGodotMap" unique_id=167483872 instance=ExtResource("26_2fwqd")]
+[node name="entity_47_window_boarded" parent="FuncGodotMap" unique_id=167483872 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.71875, 9.5625, 16.035156)
 
-[node name="entity_48_window_boarded" parent="FuncGodotMap" unique_id=1482041423 instance=ExtResource("26_2fwqd")]
+[node name="entity_48_window_boarded" parent="FuncGodotMap" unique_id=1482041423 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.6875, 9.5625, 16.035156)
 
-[node name="entity_49_window_boarded" parent="FuncGodotMap" unique_id=1340464156 instance=ExtResource("26_2fwqd")]
+[node name="entity_49_window_boarded" parent="FuncGodotMap" unique_id=1340464156 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.71875, 7.8125, 16.035156)
 
-[node name="entity_50_window_boarded" parent="FuncGodotMap" unique_id=1938807868 instance=ExtResource("26_2fwqd")]
+[node name="entity_50_window_boarded" parent="FuncGodotMap" unique_id=1938807868 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.71875, 7.8125, 16.035156)
 
-[node name="entity_51_window_boarded" parent="FuncGodotMap" unique_id=1903593893 instance=ExtResource("26_2fwqd")]
+[node name="entity_51_window_boarded" parent="FuncGodotMap" unique_id=1903593893 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.6875, 7.8125, 16.035156)
 
-[node name="entity_52_window_boarded" parent="FuncGodotMap" unique_id=393802144 instance=ExtResource("26_2fwqd")]
+[node name="entity_52_window_boarded" parent="FuncGodotMap" unique_id=393802144 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.71875, 6.0625, 16.035156)
 
-[node name="entity_53_window_boarded" parent="FuncGodotMap" unique_id=174409173 instance=ExtResource("26_2fwqd")]
+[node name="entity_53_window_boarded" parent="FuncGodotMap" unique_id=174409173 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.71875, 6.0625, 16.035156)
 
-[node name="entity_54_window_boarded" parent="FuncGodotMap" unique_id=1340119811 instance=ExtResource("26_2fwqd")]
+[node name="entity_54_window_boarded" parent="FuncGodotMap" unique_id=1340119811 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.6875, 6.0625, 16.035156)
 
-[node name="entity_55_window_boarded" parent="FuncGodotMap" unique_id=1081541342 instance=ExtResource("26_2fwqd")]
+[node name="entity_55_window_boarded" parent="FuncGodotMap" unique_id=1081541342 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.71875, 4.3125, 16.035156)
 
-[node name="entity_56_window_boarded" parent="FuncGodotMap" unique_id=2069624978 instance=ExtResource("26_2fwqd")]
+[node name="entity_56_window_boarded" parent="FuncGodotMap" unique_id=2069624978 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.71875, 4.3125, 16.035156)
 
-[node name="entity_57_window_boarded" parent="FuncGodotMap" unique_id=358574221 instance=ExtResource("26_2fwqd")]
+[node name="entity_57_window_boarded" parent="FuncGodotMap" unique_id=358574221 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.6875, 4.3125, 16.035156)
 
-[node name="entity_58_window_boarded" parent="FuncGodotMap" unique_id=827370399 instance=ExtResource("26_2fwqd")]
+[node name="entity_58_window_boarded" parent="FuncGodotMap" unique_id=827370399 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.71875, 2.5625, 16.035156)
 
-[node name="entity_59_window_boarded" parent="FuncGodotMap" unique_id=1641164855 instance=ExtResource("26_2fwqd")]
+[node name="entity_59_window_boarded" parent="FuncGodotMap" unique_id=1641164855 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.71875, 2.5625, 16.035156)
 
-[node name="entity_60_window_boarded" parent="FuncGodotMap" unique_id=2042036483 instance=ExtResource("26_2fwqd")]
+[node name="entity_60_window_boarded" parent="FuncGodotMap" unique_id=2042036483 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.6875, 2.5625, 16.035156)
 
-[node name="entity_61_window_boarded" parent="FuncGodotMap" unique_id=77480449 instance=ExtResource("26_2fwqd")]
+[node name="entity_61_window_boarded" parent="FuncGodotMap" unique_id=77480449 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -5.125, 1.6445313, -0.53515625)
 
-[node name="entity_62_window_boarded" parent="FuncGodotMap" unique_id=1074006618 instance=ExtResource("26_2fwqd")]
+[node name="entity_62_window_boarded" parent="FuncGodotMap" unique_id=1074006618 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -7.9140625, 1.6445313, -0.53515625)
 
-[node name="entity_63_window_boarded" parent="FuncGodotMap" unique_id=1132953439 instance=ExtResource("26_2fwqd")]
+[node name="entity_63_window_boarded" parent="FuncGodotMap" unique_id=1132953439 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -5.125, 3.1640625, -0.53515625)
 
-[node name="entity_64_window_boarded" parent="FuncGodotMap" unique_id=854921645 instance=ExtResource("26_2fwqd")]
+[node name="entity_64_window_boarded" parent="FuncGodotMap" unique_id=854921645 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -7.9140625, 3.1640625, -0.53515625)
 
-[node name="entity_65_window_boarded" parent="FuncGodotMap" unique_id=55915352 instance=ExtResource("26_2fwqd")]
+[node name="entity_65_window_boarded" parent="FuncGodotMap" unique_id=55915352 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, -9.042969, 3.1640625, 0.81640625)
 
-[node name="entity_66_window_boarded" parent="FuncGodotMap" unique_id=2128847950 instance=ExtResource("26_2fwqd")]
+[node name="entity_66_window_boarded" parent="FuncGodotMap" unique_id=2128847950 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, -9.042969, 3.1640625, 3.6054688)
 
-[node name="entity_67_window_boarded" parent="FuncGodotMap" unique_id=972725679 instance=ExtResource("26_2fwqd")]
+[node name="entity_67_window_boarded" parent="FuncGodotMap" unique_id=972725679 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, -9.042969, 1.6445313, 3.6054688)
 
-[node name="entity_68_window_boarded" parent="FuncGodotMap" unique_id=493777757 instance=ExtResource("26_2fwqd")]
+[node name="entity_68_window_boarded" parent="FuncGodotMap" unique_id=493777757 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, -9.042969, 1.6445313, 0.81640625)
 
-[node name="entity_69_window_boarded" parent="FuncGodotMap" unique_id=1112530157 instance=ExtResource("26_2fwqd")]
+[node name="entity_69_window_boarded" parent="FuncGodotMap" unique_id=1112530157 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.9570313, 3.1640625, 3.6210938)
 
-[node name="entity_70_window_boarded" parent="FuncGodotMap" unique_id=910299369 instance=ExtResource("26_2fwqd")]
+[node name="entity_70_window_boarded" parent="FuncGodotMap" unique_id=910299369 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.9570313, 3.1640625, 0.83203125)
 
-[node name="entity_71_window_boarded" parent="FuncGodotMap" unique_id=1552125858 instance=ExtResource("26_2fwqd")]
+[node name="entity_71_window_boarded" parent="FuncGodotMap" unique_id=1552125858 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.9570313, 1.6445313, 0.83203125)
 
-[node name="entity_72_window_boarded" parent="FuncGodotMap" unique_id=364373148 instance=ExtResource("26_2fwqd")]
+[node name="entity_72_window_boarded" parent="FuncGodotMap" unique_id=364373148 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -3.9570313, 1.6445313, 3.6210938)
 
-[node name="entity_73_window_boarded" parent="FuncGodotMap" unique_id=346553274 instance=ExtResource("26_2fwqd")]
+[node name="entity_73_window_boarded" parent="FuncGodotMap" unique_id=346553274 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -7.9140625, 3.1640625, -0.28515625)
 
-[node name="entity_74_window_boarded" parent="FuncGodotMap" unique_id=1824790954 instance=ExtResource("26_2fwqd")]
+[node name="entity_74_window_boarded" parent="FuncGodotMap" unique_id=1824790954 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -5.125, 3.1640625, -0.28515625)
 
-[node name="entity_75_window_boarded" parent="FuncGodotMap" unique_id=955851880 instance=ExtResource("26_2fwqd")]
+[node name="entity_75_window_boarded" parent="FuncGodotMap" unique_id=955851880 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -5.0859375, 3.1640625, 5.0351563)
 
-[node name="entity_76_window_boarded" parent="FuncGodotMap" unique_id=1376971792 instance=ExtResource("26_2fwqd")]
+[node name="entity_76_window_boarded" parent="FuncGodotMap" unique_id=1376971792 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.875, 3.1640625, 5.0351563)
 
-[node name="entity_77_window_boarded" parent="FuncGodotMap" unique_id=1688174794 instance=ExtResource("26_2fwqd")]
+[node name="entity_77_window_boarded" parent="FuncGodotMap" unique_id=1688174794 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1.625, 1.84375, 6.7148438)
 
-[node name="entity_78_window_boarded" parent="FuncGodotMap" unique_id=504154755 instance=ExtResource("26_2fwqd")]
+[node name="entity_78_window_boarded" parent="FuncGodotMap" unique_id=504154755 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 0.375, 1.84375, 6.7148438)
 
-[node name="entity_79_window_boarded" parent="FuncGodotMap" unique_id=913508811 instance=ExtResource("26_2fwqd")]
+[node name="entity_79_window_boarded" parent="FuncGodotMap" unique_id=913508811 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 0.375, 1.84375, 6.7148438)
 
-[node name="entity_80_window_boarded" parent="FuncGodotMap" unique_id=1831535428 instance=ExtResource("26_2fwqd")]
+[node name="entity_80_window_boarded" parent="FuncGodotMap" unique_id=1831535428 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1.625, 1.84375, 6.7148438)
 
-[node name="entity_81_window_boarded" parent="FuncGodotMap" unique_id=404580294 instance=ExtResource("26_2fwqd")]
+[node name="entity_81_window_boarded" parent="FuncGodotMap" unique_id=404580294 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 0.375, 1.84375, 6.7148438)
 
-[node name="entity_82_window_boarded" parent="FuncGodotMap" unique_id=1082589179 instance=ExtResource("26_2fwqd")]
+[node name="entity_82_window_boarded" parent="FuncGodotMap" unique_id=1082589179 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -1.625, 1.84375, 6.7148438)
 
-[node name="entity_83_window_boarded" parent="FuncGodotMap" unique_id=1984688407 instance=ExtResource("26_2fwqd")]
+[node name="entity_83_window_boarded" parent="FuncGodotMap" unique_id=1984688407 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.375, 1.84375, 10.035156)
 
-[node name="entity_84_window_boarded" parent="FuncGodotMap" unique_id=732154710 instance=ExtResource("26_2fwqd")]
+[node name="entity_84_window_boarded" parent="FuncGodotMap" unique_id=732154710 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.625, 1.84375, 10.035156)
 
-[node name="entity_85_window_boarded" parent="FuncGodotMap" unique_id=178717801 instance=ExtResource("26_2fwqd")]
+[node name="entity_85_window_boarded" parent="FuncGodotMap" unique_id=178717801 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, -2.625, 1.84375, 8.285156)
 
-[node name="entity_86_window_boarded" parent="FuncGodotMap" unique_id=114187861 instance=ExtResource("26_2fwqd")]
+[node name="entity_86_window_boarded" parent="FuncGodotMap" unique_id=114187861 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.59375, 1.8125, 10.035156)
 
-[node name="entity_87_window_boarded" parent="FuncGodotMap" unique_id=1661196454 instance=ExtResource("26_2fwqd")]
+[node name="entity_87_window_boarded" parent="FuncGodotMap" unique_id=1661196454 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.71875, 1.8125, 10.035156)
 
-[node name="entity_88_window_boarded" parent="FuncGodotMap" unique_id=2064374087 instance=ExtResource("26_2fwqd")]
+[node name="entity_88_window_boarded" parent="FuncGodotMap" unique_id=2064374087 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8125, 1.8125, 10.035156)
 
-[node name="entity_89_window_boarded" parent="FuncGodotMap" unique_id=1190045031 instance=ExtResource("26_2fwqd")]
+[node name="entity_89_window_boarded" parent="FuncGodotMap" unique_id=1190045031 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.59375, 3.5625, 10.035156)
 
-[node name="entity_90_window_boarded" parent="FuncGodotMap" unique_id=1884647911 instance=ExtResource("26_2fwqd")]
+[node name="entity_90_window_boarded" parent="FuncGodotMap" unique_id=1884647911 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.71875, 3.5625, 10.035156)
 
-[node name="entity_91_window_boarded" parent="FuncGodotMap" unique_id=821138623 instance=ExtResource("26_2fwqd")]
+[node name="entity_91_window_boarded" parent="FuncGodotMap" unique_id=821138623 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8125, 3.5625, 10.035156)
 
-[node name="entity_92_window_boarded" parent="FuncGodotMap" unique_id=917340739 instance=ExtResource("26_2fwqd")]
+[node name="entity_92_window_boarded" parent="FuncGodotMap" unique_id=917340739 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 4.90625, 3.5625, 6.7148438)
 
-[node name="entity_93_window_boarded" parent="FuncGodotMap" unique_id=847148621 instance=ExtResource("26_2fwqd")]
+[node name="entity_93_window_boarded" parent="FuncGodotMap" unique_id=847148621 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 3.78125, 3.5625, 6.7148438)
 
-[node name="entity_94_window_boarded" parent="FuncGodotMap" unique_id=1104173484 instance=ExtResource("26_2fwqd")]
+[node name="entity_94_window_boarded" parent="FuncGodotMap" unique_id=1104173484 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 2.6875, 3.5625, 6.7148438)
 
-[node name="entity_95_window_boarded" parent="FuncGodotMap" unique_id=1368001912 instance=ExtResource("26_2fwqd")]
+[node name="entity_95_window_boarded" parent="FuncGodotMap" unique_id=1368001912 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 4.90625, 1.8125, 6.7148438)
 
-[node name="entity_96_window_boarded" parent="FuncGodotMap" unique_id=260031696 instance=ExtResource("26_2fwqd")]
+[node name="entity_96_window_boarded" parent="FuncGodotMap" unique_id=260031696 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 3.78125, 1.8125, 6.7148438)
 
-[node name="entity_97_window_boarded" parent="FuncGodotMap" unique_id=1346891838 instance=ExtResource("26_2fwqd")]
+[node name="entity_97_window_boarded" parent="FuncGodotMap" unique_id=1346891838 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 2.6875, 1.8125, 6.7148438)
 
-[node name="entity_98_window_boarded" parent="FuncGodotMap" unique_id=5415009 instance=ExtResource("26_2fwqd")]
+[node name="entity_98_window_boarded" parent="FuncGodotMap" unique_id=5415009 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 6.0351563, 2.5625, 0.28125)
 
-[node name="entity_99_window_boarded" parent="FuncGodotMap" unique_id=983467965 instance=ExtResource("26_2fwqd")]
+[node name="entity_99_window_boarded" parent="FuncGodotMap" unique_id=983467965 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 6.0351563, 2.5625, -1.6875)
 
-[node name="entity_100_window_boarded" parent="FuncGodotMap" unique_id=124511255 instance=ExtResource("26_2fwqd")]
+[node name="entity_100_window_boarded" parent="FuncGodotMap" unique_id=124511255 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 6.0351563, 4.3125, -1.6875)
 
-[node name="entity_101_window_boarded" parent="FuncGodotMap" unique_id=1960042318 instance=ExtResource("26_2fwqd")]
+[node name="entity_101_window_boarded" parent="FuncGodotMap" unique_id=1960042318 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 6.0351563, 4.3125, 0.28125)
 
-[node name="entity_102_window_boarded" parent="FuncGodotMap" unique_id=1514942633 instance=ExtResource("26_2fwqd")]
+[node name="entity_102_window_boarded" parent="FuncGodotMap" unique_id=1514942633 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 6.0351563, 6.0625, 0.28125)
 
-[node name="entity_103_window_boarded" parent="FuncGodotMap" unique_id=898727513 instance=ExtResource("26_2fwqd")]
+[node name="entity_103_window_boarded" parent="FuncGodotMap" unique_id=898727513 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 6.0351563, 6.0625, -1.6875)
 
-[node name="entity_104_window_boarded" parent="FuncGodotMap" unique_id=2000443070 instance=ExtResource("26_2fwqd")]
+[node name="entity_104_window_boarded" parent="FuncGodotMap" unique_id=2000443070 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 6.0351563, 7.8125, -1.6875)
 
-[node name="entity_105_window_boarded" parent="FuncGodotMap" unique_id=1270393756 instance=ExtResource("26_2fwqd")]
+[node name="entity_105_window_boarded" parent="FuncGodotMap" unique_id=1270393756 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 6.0351563, 7.8125, 0.28125)
 
-[node name="entity_106_window_boarded" parent="FuncGodotMap" unique_id=2052627660 instance=ExtResource("26_2fwqd")]
+[node name="entity_106_window_boarded" parent="FuncGodotMap" unique_id=2052627660 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 7.8125, -1.78125)
 
-[node name="entity_107_window_boarded" parent="FuncGodotMap" unique_id=1900304443 instance=ExtResource("26_2fwqd")]
+[node name="entity_107_window_boarded" parent="FuncGodotMap" unique_id=1900304443 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 7.8125, 0.1875)
 
-[node name="entity_108_window_boarded" parent="FuncGodotMap" unique_id=1768492289 instance=ExtResource("26_2fwqd")]
+[node name="entity_108_window_boarded" parent="FuncGodotMap" unique_id=1768492289 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 6.0625, 0.1875)
 
-[node name="entity_109_window_boarded" parent="FuncGodotMap" unique_id=1585292949 instance=ExtResource("26_2fwqd")]
+[node name="entity_109_window_boarded" parent="FuncGodotMap" unique_id=1585292949 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 6.0625, -1.78125)
 
-[node name="entity_110_window_boarded" parent="FuncGodotMap" unique_id=779860858 instance=ExtResource("26_2fwqd")]
+[node name="entity_110_window_boarded" parent="FuncGodotMap" unique_id=779860858 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 4.3125, -1.78125)
 
-[node name="entity_111_window_boarded" parent="FuncGodotMap" unique_id=1460286951 instance=ExtResource("26_2fwqd")]
+[node name="entity_111_window_boarded" parent="FuncGodotMap" unique_id=1460286951 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 4.3125, 0.1875)
 
-[node name="entity_112_window_boarded" parent="FuncGodotMap" unique_id=329628815 instance=ExtResource("26_2fwqd")]
+[node name="entity_112_window_boarded" parent="FuncGodotMap" unique_id=329628815 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 2.5625, 0.1875)
 
-[node name="entity_113_window_boarded" parent="FuncGodotMap" unique_id=631977336 instance=ExtResource("26_2fwqd")]
+[node name="entity_113_window_boarded" parent="FuncGodotMap" unique_id=631977336 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 2.5625, -1.78125)
 
-[node name="entity_114_window_boarded" parent="FuncGodotMap" unique_id=1768150708 instance=ExtResource("26_2fwqd")]
+[node name="entity_114_window_boarded" parent="FuncGodotMap" unique_id=1768150708 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.40625, 7.8125, 1.2851563)
 
-[node name="entity_115_window_boarded" parent="FuncGodotMap" unique_id=295014044 instance=ExtResource("26_2fwqd")]
+[node name="entity_115_window_boarded" parent="FuncGodotMap" unique_id=295014044 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.375, 7.8125, 1.2851563)
 
-[node name="entity_116_window_boarded" parent="FuncGodotMap" unique_id=1642830700 instance=ExtResource("26_2fwqd")]
+[node name="entity_116_window_boarded" parent="FuncGodotMap" unique_id=1642830700 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.375, 6.0625, 1.2851563)
 
-[node name="entity_117_window_boarded" parent="FuncGodotMap" unique_id=1099108980 instance=ExtResource("26_2fwqd")]
+[node name="entity_117_window_boarded" parent="FuncGodotMap" unique_id=1099108980 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.40625, 6.0625, 1.2851563)
 
-[node name="entity_118_window_boarded" parent="FuncGodotMap" unique_id=1262178460 instance=ExtResource("26_2fwqd")]
+[node name="entity_118_window_boarded" parent="FuncGodotMap" unique_id=1262178460 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.40625, 4.3125, 1.2851563)
 
-[node name="entity_119_window_boarded" parent="FuncGodotMap" unique_id=860321047 instance=ExtResource("26_2fwqd")]
+[node name="entity_119_window_boarded" parent="FuncGodotMap" unique_id=860321047 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.375, 4.3125, 1.2851563)
 
-[node name="entity_120_window_boarded" parent="FuncGodotMap" unique_id=1213507271 instance=ExtResource("26_2fwqd")]
+[node name="entity_120_window_boarded" parent="FuncGodotMap" unique_id=1213507271 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.375, 2.5625, 1.2851563)
 
-[node name="entity_121_window_boarded" parent="FuncGodotMap" unique_id=1164038364 instance=ExtResource("26_2fwqd")]
+[node name="entity_121_window_boarded" parent="FuncGodotMap" unique_id=1164038364 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.40625, 2.5625, 1.2851563)
 
-[node name="entity_122_window_boarded" parent="FuncGodotMap" unique_id=204976690 instance=ExtResource("26_2fwqd")]
+[node name="entity_122_window_boarded" parent="FuncGodotMap" unique_id=204976690 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 2.0625, -4.53125)
 
-[node name="entity_123_window_boarded" parent="FuncGodotMap" unique_id=1874583289 instance=ExtResource("26_2fwqd")]
+[node name="entity_123_window_boarded" parent="FuncGodotMap" unique_id=1874583289 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 2.0625, -6.03125)
 
-[node name="entity_124_window_boarded" parent="FuncGodotMap" unique_id=1567764016 instance=ExtResource("26_2fwqd")]
+[node name="entity_124_window_boarded" parent="FuncGodotMap" unique_id=1567764016 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 3.8125, -6.03125)
 
-[node name="entity_125_window_boarded" parent="FuncGodotMap" unique_id=1377602269 instance=ExtResource("26_2fwqd")]
+[node name="entity_125_window_boarded" parent="FuncGodotMap" unique_id=1377602269 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 3.8125, -4.53125)
 
-[node name="entity_126_window_boarded" parent="FuncGodotMap" unique_id=1937627186 instance=ExtResource("26_2fwqd")]
+[node name="entity_126_window_boarded" parent="FuncGodotMap" unique_id=1937627186 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 5.3125, -6.03125)
 
-[node name="entity_127_window_boarded" parent="FuncGodotMap" unique_id=1888672920 instance=ExtResource("26_2fwqd")]
+[node name="entity_127_window_boarded" parent="FuncGodotMap" unique_id=1888672920 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 2.7148438, 5.3125, -4.53125)
 
-[node name="entity_128_window_boarded" parent="FuncGodotMap" unique_id=1525022390 instance=ExtResource("26_2fwqd")]
+[node name="entity_128_window_boarded" parent="FuncGodotMap" unique_id=1525022390 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 5.03125, 5.3125, -7.0351563)
 
-[node name="entity_129_window_boarded" parent="FuncGodotMap" unique_id=193381443 instance=ExtResource("26_2fwqd")]
+[node name="entity_129_window_boarded" parent="FuncGodotMap" unique_id=193381443 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 3.53125, 5.3125, -7.0351563)
 
-[node name="entity_130_window_boarded" parent="FuncGodotMap" unique_id=192055069 instance=ExtResource("26_2fwqd")]
+[node name="entity_130_window_boarded" parent="FuncGodotMap" unique_id=192055069 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 5.03125, 3.8125, -7.0351563)
 
-[node name="entity_131_window_boarded" parent="FuncGodotMap" unique_id=1088130500 instance=ExtResource("26_2fwqd")]
+[node name="entity_131_window_boarded" parent="FuncGodotMap" unique_id=1088130500 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 3.53125, 3.8125, -7.0351563)
 
-[node name="entity_132_window_boarded" parent="FuncGodotMap" unique_id=372531721 instance=ExtResource("26_2fwqd")]
+[node name="entity_132_window_boarded" parent="FuncGodotMap" unique_id=372531721 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 3.53125, 2.0625, -7.0351563)
 
-[node name="entity_133_window_boarded" parent="FuncGodotMap" unique_id=483761366 instance=ExtResource("26_2fwqd")]
+[node name="entity_133_window_boarded" parent="FuncGodotMap" unique_id=483761366 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 5.03125, 2.0625, -7.0351563)
 
-[node name="entity_134_window_boarded" parent="FuncGodotMap" unique_id=1503173334 instance=ExtResource("26_2fwqd")]
+[node name="entity_134_window_boarded" parent="FuncGodotMap" unique_id=1503173334 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 7.03125, 2.0625, -7.0351563)
 
-[node name="entity_135_window_boarded" parent="FuncGodotMap" unique_id=1574160723 instance=ExtResource("26_2fwqd")]
+[node name="entity_135_window_boarded" parent="FuncGodotMap" unique_id=1574160723 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 8.4375, 2.0625, -7.0351563)
 
-[node name="entity_136_window_boarded" parent="FuncGodotMap" unique_id=1618705883 instance=ExtResource("26_2fwqd")]
+[node name="entity_136_window_boarded" parent="FuncGodotMap" unique_id=1618705883 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 8.4375, 4.0625, -7.0351563)
 
-[node name="entity_137_window_boarded" parent="FuncGodotMap" unique_id=378034645 instance=ExtResource("26_2fwqd")]
+[node name="entity_137_window_boarded" parent="FuncGodotMap" unique_id=378034645 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 7.03125, 4.0625, -7.0351563)
 
-[node name="entity_138_window_boarded" parent="FuncGodotMap" unique_id=1301108312 instance=ExtResource("26_2fwqd")]
+[node name="entity_138_window_boarded" parent="FuncGodotMap" unique_id=1301108312 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 8.4375, 6.3125, -7.0351563)
 
-[node name="entity_139_window_boarded" parent="FuncGodotMap" unique_id=709354015 instance=ExtResource("26_2fwqd")]
+[node name="entity_139_window_boarded" parent="FuncGodotMap" unique_id=709354015 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 7.03125, 6.3125, -7.0351563)
 
-[node name="entity_140_window_boarded" parent="FuncGodotMap" unique_id=560004612 instance=ExtResource("26_2fwqd")]
+[node name="entity_140_window_boarded" parent="FuncGodotMap" unique_id=560004612 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 9.4375, 2.0625, -6.0351563)
 
-[node name="entity_141_window_boarded" parent="FuncGodotMap" unique_id=1193291741 instance=ExtResource("26_2fwqd")]
+[node name="entity_141_window_boarded" parent="FuncGodotMap" unique_id=1193291741 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 9.4375, 2.0625, -4.5351563)
 
-[node name="entity_142_window_boarded" parent="FuncGodotMap" unique_id=993978245 instance=ExtResource("26_2fwqd")]
+[node name="entity_142_window_boarded" parent="FuncGodotMap" unique_id=993978245 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 9.4375, 4.0625, -4.5351563)
 
-[node name="entity_143_window_boarded" parent="FuncGodotMap" unique_id=1585947928 instance=ExtResource("26_2fwqd")]
+[node name="entity_143_window_boarded" parent="FuncGodotMap" unique_id=1585947928 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 9.4375, 4.0625, -6.0351563)
 
-[node name="entity_144_window_boarded" parent="FuncGodotMap" unique_id=916585776 instance=ExtResource("26_2fwqd")]
+[node name="entity_144_window_boarded" parent="FuncGodotMap" unique_id=916585776 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 9.4375, 6.0625, -4.5351563)
 
-[node name="entity_145_window_boarded" parent="FuncGodotMap" unique_id=511789421 instance=ExtResource("26_2fwqd")]
+[node name="entity_145_window_boarded" parent="FuncGodotMap" unique_id=511789421 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 9.4375, 6.0625, -6.0351563)
 
-[node name="entity_146_window_boarded" parent="FuncGodotMap" unique_id=274418184 instance=ExtResource("26_2fwqd")]
+[node name="entity_146_window_boarded" parent="FuncGodotMap" unique_id=274418184 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.375, 1.6875, -13.714844)
 
-[node name="entity_147_window_boarded" parent="FuncGodotMap" unique_id=1311671652 instance=ExtResource("26_2fwqd")]
+[node name="entity_147_window_boarded" parent="FuncGodotMap" unique_id=1311671652 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.875, 1.6875, -13.714844)
 
-[node name="entity_148_window_boarded" parent="FuncGodotMap" unique_id=754229570 instance=ExtResource("26_2fwqd")]
+[node name="entity_148_window_boarded" parent="FuncGodotMap" unique_id=754229570 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.21875, 1.78125, -10.714844)
 
-[node name="entity_149_window_boarded" parent="FuncGodotMap" unique_id=617539196 instance=ExtResource("26_2fwqd")]
+[node name="entity_149_window_boarded" parent="FuncGodotMap" unique_id=617539196 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -5.34375, 1.78125, -10.714844)
 
-[node name="entity_150_window_boarded" parent="FuncGodotMap" unique_id=827951002 instance=ExtResource("26_2fwqd")]
+[node name="entity_150_window_boarded" parent="FuncGodotMap" unique_id=827951002 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.996094, 1.78125, -10.714844)
 
-[node name="entity_151_window_boarded" parent="FuncGodotMap" unique_id=749143726 instance=ExtResource("26_2fwqd")]
+[node name="entity_151_window_boarded" parent="FuncGodotMap" unique_id=749143726 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.121094, 1.78125, -10.714844)
 
-[node name="entity_152_window_boarded" parent="FuncGodotMap" unique_id=1582849028 instance=ExtResource("26_2fwqd")]
+[node name="entity_152_window_boarded" parent="FuncGodotMap" unique_id=1582849028 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -15.015625, 1.78125, -10.714844)
 
-[node name="entity_153_window_boarded" parent="FuncGodotMap" unique_id=1434659000 instance=ExtResource("26_2fwqd")]
+[node name="entity_153_window_boarded" parent="FuncGodotMap" unique_id=1434659000 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -13.140625, 1.78125, -10.714844)
 
-[node name="entity_154_window_boarded" parent="FuncGodotMap" unique_id=1639863766 instance=ExtResource("26_2fwqd")]
+[node name="entity_154_window_boarded" parent="FuncGodotMap" unique_id=1639863766 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -7.3164063, 1.9140625, -15.285156)
 
-[node name="entity_155_window_boarded" parent="FuncGodotMap" unique_id=977923851 instance=ExtResource("26_2fwqd")]
+[node name="entity_155_window_boarded" parent="FuncGodotMap" unique_id=977923851 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -5.4570313, 1.90625, -15.285156)
 
-[node name="entity_156_window_boarded" parent="FuncGodotMap" unique_id=1593121800 instance=ExtResource("26_2fwqd")]
+[node name="entity_156_window_boarded" parent="FuncGodotMap" unique_id=1593121800 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -10.953125, 1.9414063, -15.285156)
 
-[node name="entity_157_window_boarded" parent="FuncGodotMap" unique_id=160788528 instance=ExtResource("26_2fwqd")]
+[node name="entity_157_window_boarded" parent="FuncGodotMap" unique_id=160788528 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -9.09375, 1.9335938, -15.285156)
 
-[node name="entity_158_window_boarded" parent="FuncGodotMap" unique_id=1700069293 instance=ExtResource("26_2fwqd")]
+[node name="entity_158_window_boarded" parent="FuncGodotMap" unique_id=1700069293 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -15.042969, 1.8632813, -15.285156)
 
-[node name="entity_159_window_boarded" parent="FuncGodotMap" unique_id=1354419018 instance=ExtResource("26_2fwqd")]
+[node name="entity_159_window_boarded" parent="FuncGodotMap" unique_id=1354419018 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -13.183594, 1.8554688, -15.285156)
 
-[node name="entity_160_window_boarded" parent="FuncGodotMap" unique_id=1478795595 instance=ExtResource("26_2fwqd")]
+[node name="entity_160_window_boarded" parent="FuncGodotMap" unique_id=1478795595 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.6484375, 1.640625, -13.464844)
 
-[node name="entity_161_window_boarded" parent="FuncGodotMap" unique_id=187173175 instance=ExtResource("26_2fwqd")]
+[node name="entity_161_window_boarded" parent="FuncGodotMap" unique_id=187173175 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 13.964844, 1.5859375, -11.921875)
 
-[node name="entity_162_window_boarded" parent="FuncGodotMap" unique_id=857769882 instance=ExtResource("26_2fwqd")]
+[node name="entity_162_window_boarded" parent="FuncGodotMap" unique_id=857769882 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 13.714844, 2.1992188, 1.2382813)
 
-[node name="entity_163_window_boarded" parent="FuncGodotMap" unique_id=755100690 instance=ExtResource("26_2fwqd")]
+[node name="entity_163_window_boarded" parent="FuncGodotMap" unique_id=755100690 instance=ExtResource("26_2c5uy")]
 transform = Transform3D(1.3907092e-07, 0, 1, 0, 1, 0, -1, 0, 1.3907092e-07, 13.714844, 2.265625, 4.390625)
 
 [node name="TwistPivot" type="Node3D" parent="." unique_id=1236559532]
-script = ExtResource("8_1o1w2")
+script = ExtResource("27_mr4sy")
 
 [node name="Camera3D" type="Camera3D" parent="TwistPivot" unique_id=1497431017]
 transform = Transform3D(1, 0, 0, 0, 0.72580695, 0.6878985, 0, -0.6878985, 0.72580695, 0, 14.3094425, 19.038006)
