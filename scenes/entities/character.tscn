@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cves1g242m8kq"]
+
+[ext_resource type="Script" uid="uid://bt6jklxg1wi4h" path="res://scripts/character.gd" id="1_qgsx0"]
+[ext_resource type="Script" uid="uid://c3d8eroxxkseg" path="res://scripts/npc_brain.gd" id="3_2xyo8"]
+[ext_resource type="Texture2D" uid="uid://c21v0dcdy8xdy" path="res://sprites/character_1_frame32x32.png" id="3_6lyva"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rk0cf"]
+radius = 0.25
+height = 1.0
+
+[node name="Character" type="CharacterBody3D" unique_id=1999063034]
+script = ExtResource("1_qgsx0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1673776231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CapsuleShape3D_rk0cf")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=467937966]
+offset = Vector2(0, 5)
+pixel_size = 0.0625
+billboard = 1
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("3_6lyva")
+hframes = 3
+vframes = 4
+frame = 1
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=556157350]
+
+[node name="NPCBrain" type="Node" parent="." unique_id=2081371310]
+script = ExtResource("3_2xyo8")

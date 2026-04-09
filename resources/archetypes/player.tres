@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="NPCArchetype" format=3 uid="uid://cqusdtsejrxgo"]
+
+[ext_resource type="Script" uid="uid://r3v7lixwmb1w" path="res://scripts/npc_behaviour.gd" id="1_tlhrj"]
+[ext_resource type="Script" uid="uid://d38dsb1ontf51" path="res://scripts/behaviours/player_behaviour.gd" id="2_8nph2"]
+[ext_resource type="Script" uid="uid://j1mhixob8ewl" path="res://scripts/npc_archetype.gd" id="2_mst3h"]
+
+[sub_resource type="Resource" id="Resource_7xqsa"]
+script = ExtResource("2_8nph2")
+metadata/_custom_type_script = "uid://d38dsb1ontf51"
+
+[resource]
+script = ExtResource("2_mst3h")
+behaviours = Array[ExtResource("1_tlhrj")]([SubResource("Resource_7xqsa")])
+output_smoothing = 0.9
+spawn_weight = 0.0
+metadata/_custom_type_script = "uid://j1mhixob8ewl"

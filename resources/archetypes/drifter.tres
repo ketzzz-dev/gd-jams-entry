@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="NPCArchetype" format=3 uid="uid://bcjtrb4b3f3mq"]
+
+[ext_resource type="Script" uid="uid://r3v7lixwmb1w" path="res://scripts/npc_behaviour.gd" id="1_qg1ky"]
+[ext_resource type="Script" uid="uid://cgaegan4a5gxs" path="res://scripts/behaviours/wander_behaviour.gd" id="2_iawh4"]
+[ext_resource type="Script" uid="uid://j1mhixob8ewl" path="res://scripts/npc_archetype.gd" id="2_l4cw8"]
+[ext_resource type="Script" uid="uid://cc5kqc3eoam51" path="res://scripts/behaviours/cohesion_behaviour.gd" id="3_prioy"]
+[ext_resource type="Script" uid="uid://dsdpboabs7v8h" path="res://scripts/behaviours/avoid_behaviour.gd" id="4_2dbqe"]
+[ext_resource type="Script" uid="uid://17gwbcia8qci" path="res://scripts/behaviours/flow_bias_behaviour.gd" id="4_4bha7"]
+[ext_resource type="Script" uid="uid://dlc03jk7p4c58" path="res://scripts/behaviours/mimic_behaviour.gd" id="6_qtct5"]
+
+[sub_resource type="Resource" id="Resource_5cqho"]
+script = ExtResource("3_prioy")
+strength = 0.15
+metadata/_custom_type_script = "uid://cc5kqc3eoam51"
+
+[sub_resource type="Resource" id="Resource_p82uk"]
+script = ExtResource("4_4bha7")
+strength = 0.5
+metadata/_custom_type_script = "uid://17gwbcia8qci"
+
+[sub_resource type="Resource" id="Resource_i82tc"]
+script = ExtResource("4_2dbqe")
+metadata/_custom_type_script = "uid://dsdpboabs7v8h"
+
+[sub_resource type="Resource" id="Resource_ewh13"]
+script = ExtResource("6_qtct5")
+metadata/_custom_type_script = "uid://dlc03jk7p4c58"
+
+[sub_resource type="Resource" id="Resource_2dbqe"]
+script = ExtResource("2_iawh4")
+metadata/_custom_type_script = "uid://cgaegan4a5gxs"
+
+[resource]
+script = ExtResource("2_l4cw8")
+behaviours = Array[ExtResource("1_qg1ky")]([SubResource("Resource_5cqho"), SubResource("Resource_p82uk"), SubResource("Resource_i82tc"), SubResource("Resource_ewh13"), SubResource("Resource_2dbqe")])
+metadata/_custom_type_script = "uid://j1mhixob8ewl"
