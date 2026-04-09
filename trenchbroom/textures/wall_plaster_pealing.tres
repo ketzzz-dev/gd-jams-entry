@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dcxho5erwdx1v"]
+
+[ext_resource type="Texture2D" uid="uid://cpxnqlbw2l5ia" path="res://trenchbroom/textures/wall_plaster_pealing.png" id="1_4asw4"]
+
+[resource]
+albedo_texture = ExtResource("1_4asw4")
+metallic_specular = 0.0
+texture_filter = 2

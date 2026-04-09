@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://djl2eolfir57e"]
+
+[ext_resource type="Texture2D" uid="uid://8eq2m3xq4usx" path="res://trenchbroom/textures/wall_stucco_03.jpg" id="1_gdtei"]
+
+[resource]
+albedo_texture = ExtResource("1_gdtei")
+metallic_specular = 0.0
+texture_filter = 2

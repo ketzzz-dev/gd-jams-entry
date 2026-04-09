@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://drlmgulwbjwqu" path="res://addons/func_godot/src/fgd/func_godot_fgd_file.gd" id="1_pfa5f"]
 [ext_resource type="Resource" uid="uid://crgpdahjaj" path="res://addons/func_godot/fgd/func_godot_fgd.tres" id="1_stvka"]
+[ext_resource type="Resource" uid="uid://bsj3mstykvife" path="res://trenchbroom/fgd/model_point/boarded_window.tres" id="2_17g14"]
 
 [resource]
 script = ExtResource("1_pfa5f")
 fgd_name = "GDJamsEntry"
 base_fgd_files = Array[Resource]([ExtResource("1_stvka")])
+entity_definitions = Array[Resource]([ExtResource("2_17g14")])
 metadata/_custom_type_script = "uid://drlmgulwbjwqu"

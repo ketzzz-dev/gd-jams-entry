@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="FuncGodotFGDModelPointClass" format=3 uid="uid://bsj3mstykvife"]
+
+[ext_resource type="Script" uid="uid://d1nwwgcrner8b" path="res://addons/func_godot/src/fgd/func_godot_fgd_point_class_display_descriptor.gd" id="1_njxi4"]
+[ext_resource type="Script" uid="uid://ldfqjtq0br35" path="res://addons/func_godot/src/fgd/func_godot_fgd_model_point_class.gd" id="2_b4clv"]
+[ext_resource type="PackedScene" uid="uid://chmj84b7x4b1n" path="res://props/window_boarded.tscn" id="2_g07o7"]
+
+[resource]
+script = ExtResource("2_b4clv")
+target_map_editor = 1
+generate_size_property = true
+scene_file = ExtResource("2_g07o7")
+classname = "window_boarded"
+description = "It's a boarded window."
+meta_properties = Dictionary[String, Variant]({
+"color": Color(0.8, 0.8, 0.8, 1),
+"model": "{\"path\": \"trenchbroom/models/window_boarded.glb\", \"scale\": 32.0 }",
+"size": AABB(-1, -12, -18, 1, 12, 18)
+})
+metadata/_custom_type_script = "uid://ldfqjtq0br35"
