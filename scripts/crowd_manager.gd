@@ -4,26 +4,34 @@ const NUM_SAMPLES_BEFORE_REJECTION := 30
 
 @export var region_size: Vector2 = Vector2(100, 100)
 @export var min_distance: float = 5
+@export var max_characters: int = 100
 
 @export var character_scene: PackedScene
 @export var character_sprites: Array[Texture2D]
 @export var character_archetypes: Array[NPCArchetype]
+@export var navigation_region: NavigationRegion3D
 
 @export var influence_radius: float = 4
 
-var _player_archetype: NPCArchetype = preload("res://resources/archetypes/player.tres")
+@onready var _nav_map: RID
 
-var _cols: int
-var _rows: int
-var _cell_size: float
+var _player_archetype: NPCArchetype = preload("res://resources/archetypes/player.tres")
 
 var _characters: Array[Character] = []
 var _spatial_grid: Dictionary[Vector2i, Array] = {}
 
 func _ready() -> void:
+	await NavigationServer3D.map_changed # idk
+	
+	_nav_map = navigation_region.get_navigation_map()
+	
 	var available_sprites = character_sprites.duplicate()
 	
-	for point in _generate_points():
+	await NavigationServer3D.map_changed # idk 2
+	
+	var spawn_points = _generate_points()
+	
+	for point in spawn_points:
 		await get_tree().process_frame
 		
 		if available_sprites.is_empty():
@@ -34,7 +42,12 @@ func _ready() -> void:
 		
 		add_child(character)
 		
-		character.position = Vector3(point.x - 0.5 * region_size.x, 10, point.y - 0.5 * region_size.y)
+		var nav_pos := NavigationServer3D.map_get_closest_point(
+			_nav_map,
+			Vector3(point.x, 0.0, point.y)
+		)
+
+		character.position = nav_pos
 		character.sprite.texture = available_sprites.pop_back()
 		character.brain.archetype = _pick_archetype()
 		
@@ -139,74 +152,34 @@ func _get_neighbours(character: Character) -> Array:
 	return neighbours
 
 func _generate_points() -> Array[Vector2]:
-	_cell_size = min_distance / sqrt(2)
-	_cols = ceili(region_size.x / _cell_size)
-	_rows = ceili(region_size.y / _cell_size)
-	
-	var grid: Array[int] = []
-	
-	grid.resize(_cols * _rows)
-	grid.fill(0)
-	
 	var points: Array[Vector2] = []
-	var active: Array[Vector2] = []
-
-	var first := Vector2(randf_range(0, region_size.x), randf_range(0, region_size.y))
-	var first_cell := Vector2i(int(first.x / _cell_size), int(first.y / _cell_size))
 	
-	grid[first_cell.y * _cols + first_cell.x] = 1
+	var attempts := 0
+	var max_attempts := 10000
 	
-	points.append(first)
-	active.append(first)
-	
-	while active.size() > 0:
-		var rand_idx := randi_range(0, active.size() - 1)
-		var spawn_center := active[rand_idx]
-		var accepted := false
+	while attempts < max_attempts and points.size() < max_characters:
+		attempts += 1
 		
-		for i in NUM_SAMPLES_BEFORE_REJECTION:
-			var angle := randf() * TAU
-			var radius := randf_range(min_distance, 2 * min_distance)
-			var candidate := spawn_center + Vector2(cos(angle), sin(angle)) * radius
-			
-			if _is_valid(candidate, grid, points):
-				var c_cell := Vector2i(int(candidate.x / _cell_size), int(candidate.y / _cell_size))
-				
-				grid[c_cell.y * _cols + c_cell.x] = points.size() + 1
-				
-				points.append(candidate)
-				active.append(candidate)
-				
-				accepted = true
-				
-				break
+		var p3: Vector3 = NavigationServer3D.map_get_random_point(
+			_nav_map,
+			1,      # navigation layers
+			true    # uniform sampling
+		)
 		
-		if not accepted:
-			active.remove_at(rand_idx)
+		#print(p3)
+		
+		var candidate := Vector2(p3.x, p3.z)
+		
+		if _is_far_enough(candidate, points):
+			points.append(candidate)
 	
 	return points
 
-func _is_valid(candidate: Vector2, grid: Array[int], points: Array[Vector2]) -> bool:
-	if candidate.x < 0 or candidate.x >= region_size.x \
-	or candidate.y < 0 or candidate.y >= region_size.y:
-		return false
-		
-	var cell := Vector2i(int(candidate.x / _cell_size), int(candidate.y / _cell_size))
+func _is_far_enough(candidate: Vector2, points: Array[Vector2]) -> bool:
+	var min_dist_sq := min_distance * min_distance
 	
-	for dx in range(-2, 3):
-		for dy in range(-2, 3):
-			var nx := cell.x + dx
-			var ny := cell.y + dy
-			
-			if nx < 0 or nx >= _cols or ny < 0 or ny >= _rows:
-				continue
-			
-			var idx: int = grid[ny * _cols + nx]
-			
-			if idx > 0:
-				var other := points[idx - 1]
-				
-				if candidate.distance_squared_to(other) < min_distance * min_distance:
-					return false
+	for p in points:
+		if candidate.distance_squared_to(p) < min_dist_sq:
+			return false
 	
 	return true
