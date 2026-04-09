@@ -14,8 +14,13 @@ var cluster_center: Vector3 = Vector3.ZERO
 
 var _input_vector := Vector2.ZERO
 var active := false
+var selected := false
+var frozen := false
 
 func _physics_process(delta: float) -> void:
+	if frozen:
+		return
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
@@ -34,3 +39,11 @@ func _physics_process(delta: float) -> void:
 	velocity.z = lerpf(velocity.z, target_velocity.y, alpha)
 	
 	move_and_slide()
+
+func set_selected(value) -> void:
+	selected = value
+
+func set_frozen(value: bool) -> void:
+	frozen = value
+	if frozen:
+		velocity = Vector3.ZERO

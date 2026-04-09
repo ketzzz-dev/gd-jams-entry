@@ -19,6 +19,7 @@ var _player_archetype: NPCArchetype = preload("res://resources/archetypes/player
 
 var _characters: Array[Character] = []
 var _spatial_grid: Dictionary[Vector2i, Array] = {}
+var frozen: bool = false
 
 func _ready() -> void:
 	await NavigationServer3D.map_changed # idk
@@ -49,6 +50,7 @@ func _ready() -> void:
 
 		character.position = nav_pos
 		character.sprite.texture = available_sprites.pop_back()
+		
 		character.brain.archetype = _pick_archetype()
 		
 		_characters.append(character)
@@ -183,3 +185,21 @@ func _is_far_enough(candidate: Vector2, points: Array[Vector2]) -> bool:
 			return false
 	
 	return true
+
+func get_characters() -> Array[Character]:
+	return _characters
+
+func is_player(character: Character) -> bool:
+	return character.brain.archetype == _player_archetype
+
+#Optional Script: Get the player character directly
+func get_player() -> Character:
+	for c in _characters:
+		if c.brain.archetype == _player_archetype:
+			return c
+	return null
+
+func set_frozen(value: bool) -> void:
+	frozen = value
+	for character in _characters:
+		character.set_frozen(value)
