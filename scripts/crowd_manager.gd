@@ -44,7 +44,7 @@ func _ready() -> void:
 		
 		var nav_pos := NavigationServer3D.map_get_closest_point(
 			_nav_map,
-			Vector3(point.x, 0.0, point.y)
+			Vector3(point.x, 10.0, point.y)
 		)
 
 		character.position = nav_pos
