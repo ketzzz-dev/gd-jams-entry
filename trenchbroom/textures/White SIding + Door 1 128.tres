@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://hry78n20d0eq"]
+
+[ext_resource type="Texture2D" uid="uid://7nw24g0hln0f" path="res://trenchbroom/textures/White SIding + Door 1 128.png" id="1_ssl03"]
+
+[resource]
+albedo_texture = ExtResource("1_ssl03")
+metallic_specular = 0.0
+texture_filter = 2

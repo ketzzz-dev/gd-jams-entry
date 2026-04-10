@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://chmj84b7x4b1n"]
+
+[ext_resource type="Texture2D" uid="uid://bu35jvnjmgekd" path="res://props/window_boarded.png" id="1_4u32l"]
+[ext_resource type="PackedScene" uid="uid://dcuyx2ok61jw2" path="res://props/window_boarded.glb" id="1_6ntv4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2gshn"]
+albedo_texture = ExtResource("1_4u32l")
+texture_filter = 2
+
+[node name="window_boarded" unique_id=1747962583 instance=ExtResource("1_6ntv4")]
+
+[node name="Window_Boarded" parent="." index="0" unique_id=1181122909]
+surface_material_override/0 = SubResource("StandardMaterial3D_2gshn")
