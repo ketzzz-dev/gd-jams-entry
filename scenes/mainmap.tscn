@@ -74,7 +74,11 @@
 [ext_resource type="Material" uid="uid://xca7x30aq45j" path="res://trenchbroom/textures/wall_halfconcrete_05.tres" id="72_esucr"]
 [ext_resource type="Material" uid="uid://dl1xgu6k86m40" path="res://trenchbroom/textures/wall_cracked_1.tres" id="73_5edgj"]
 [ext_resource type="PackedScene" uid="uid://chmj84b7x4b1n" path="res://props/window_boarded.tscn" id="74_310ay"]
-[ext_resource type="Script" path="res://scripts/camera.gd" id="75_nkdv0"]
+[ext_resource type="Script" uid="uid://b36xo5pajw5gn" path="res://scripts/camera.gd" id="75_nkdv0"]
+[ext_resource type="Script" uid="uid://cq6xnxhq7jlrg" path="res://scripts/gamemanager.gd" id="76_4qw1p"]
+[ext_resource type="Script" uid="uid://bgop4onlret7j" path="res://scenes/hud.gd" id="77_ayrjt"]
+[ext_resource type="Script" uid="uid://bdnsjurav5ppv" path="res://scenes/success_screen.gd" id="78_0t6co"]
+[ext_resource type="Script" uid="uid://cpqvxhj7mcdva" path="res://scenes/game_over_screen.gd" id="79_mnfqu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8w48h"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1442,3 +1446,71 @@ script = ExtResource("75_nkdv0")
 
 [node name="Camera3D" type="Camera3D" parent="TwistPivot" unique_id=1850706056]
 transform = Transform3D(1, 0, 0, 0, 0.75233465, 0.65878123, 0, -0.65878123, 0.75233465, 0, 13.53168, 19.357508)
+
+[node name="GameManager" type="Node" parent="." unique_id=1493440224]
+script = ExtResource("76_4qw1p")
+hud_path = NodePath("../UI/HUD")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=355407960]
+
+[node name="HUD" type="Control" parent="UI" unique_id=1772283300]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 647.0
+script = ExtResource("77_ayrjt")
+
+[node name="TimerLabel" type="Label" parent="UI/HUD" unique_id=1636159560]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="GuessesLabel" type="Label" parent="UI/HUD" unique_id=36383790]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Notification" type="Label" parent="UI/HUD" unique_id=251850901]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SuccessScreen" type="Panel" parent="UI" unique_id=1665974332]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("78_0t6co")
+
+[node name="Title" type="Label" parent="UI/SuccessScreen" unique_id=1128906260]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StageStats" type="VBoxContainer" parent="UI/SuccessScreen" unique_id=415096395]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NextStage" type="Button" parent="UI/SuccessScreen" unique_id=425524564]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="GameOverScreen" type="Panel" parent="UI" unique_id=1632406648]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("79_mnfqu")
+
+[node name="Title" type="Panel" parent="UI/GameOverScreen" unique_id=559144904]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Stats" type="VBoxContainer" parent="UI/GameOverScreen" unique_id=1649841320]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RestartStage" type="Button" parent="UI/GameOverScreen" unique_id=773304381]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

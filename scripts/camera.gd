@@ -1,6 +1,7 @@
 extends Node3D
 
 @onready var crowd_manager: Node = $"../CrowdManager"
+@onready var gm: Node = $"../GameManager"
 
 var mouse_sensitivity := 0.001
 var twist_input := 0.0
@@ -84,6 +85,7 @@ func _try_select_npc(mouse_pos: Vector2) -> void:
 	if result and result.has("collider") and result.collider is Character:
 		var npc: Character = result.collider
 		npc.selected = true
+		gm.register_guess(npc, crowd_manager)
 		
 		if crowd_manager.is_player(npc):
 			print("You selected the PLAYER!")
