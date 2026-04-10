@@ -7,12 +7,14 @@ extends CharacterBody3D
 
 @onready var sprite: Sprite3D = $Sprite3D
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
+@onready var animation_tree: AnimationTree = $AnimationTree
 @onready var brain: NPCBrain = $NPCBrain
 
 var cluster_id: int = -1
 var cluster_center: Vector3 = Vector3.ZERO
 
 var _input_vector := Vector2.ZERO
+var _last_direction := Vector2.ZERO
 var active := false
 
 func _physics_process(delta: float) -> void:
@@ -32,5 +34,16 @@ func _physics_process(delta: float) -> void:
 	
 	velocity.x = lerpf(velocity.x, target_velocity.x, alpha)
 	velocity.z = lerpf(velocity.z, target_velocity.y, alpha)
+	
+	var is_idle = velocity.is_zero_approx()
+	
+	if not is_idle:
+		_last_direction = Vector2(velocity.x, velocity.z).normalized()
+	
+	animation_tree.set("parameters/conditions/idle", is_idle)
+	animation_tree.set("parameters/conditions/walk", not is_idle)
+	
+	animation_tree.set("parameters/Idle/blend_position", _last_direction)
+	animation_tree.set("parameters/Walk/blend_position", _last_direction)
 	
 	move_and_slide()
