@@ -74,7 +74,7 @@
 [ext_resource type="Material" uid="uid://xca7x30aq45j" path="res://trenchbroom/textures/wall_halfconcrete_05.tres" id="72_esucr"]
 [ext_resource type="Material" uid="uid://dl1xgu6k86m40" path="res://trenchbroom/textures/wall_cracked_1.tres" id="73_5edgj"]
 [ext_resource type="PackedScene" uid="uid://chmj84b7x4b1n" path="res://props/window_boarded.tscn" id="74_310ay"]
-[ext_resource type="Script" uid="uid://b36xo5pajw5gn" path="res://scripts/camera.gd" id="75_nkdv0"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="75_nkdv0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8w48h"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -641,7 +641,6 @@ shadow_enabled = true
 script = ExtResource("1_iea4r")
 region_size = Vector2(30, 30)
 min_distance = 1.0
-max_characters = 150
 character_scene = ExtResource("2_e3wgk")
 character_sprites = Array[Texture2D]([ExtResource("3_k1k30"), ExtResource("4_2wfrc"), ExtResource("5_sx1in"), ExtResource("6_p8tr2"), ExtResource("7_sef2u"), ExtResource("8_cqcag"), ExtResource("9_2e1uh"), ExtResource("10_gn7md"), ExtResource("11_0o5eq"), ExtResource("12_x3l0c"), ExtResource("13_e85td"), ExtResource("14_dswbu"), ExtResource("15_458st"), ExtResource("16_q3dsx"), ExtResource("17_vvxal"), ExtResource("18_rgsi8"), ExtResource("19_fh0bc"), ExtResource("20_iu274"), ExtResource("21_nkdv0"), ExtResource("22_4qw1p"), ExtResource("23_ayrjt"), ExtResource("24_0t6co"), ExtResource("25_mnfqu"), ExtResource("26_glxm5"), ExtResource("27_42rl3"), ExtResource("28_3f5yb"), ExtResource("29_drpvx"), ExtResource("30_cd01m"), ExtResource("31_vv7ca"), ExtResource("32_v38ug"), ExtResource("33_hgnmc"), ExtResource("34_syt68")])
 character_archetypes = Array[ExtResource("35_1kdcu")]([SubResource("Resource_sla20"), ExtResource("41_esucr"), ExtResource("42_5edgj"), ExtResource("43_310ay"), ExtResource("44_2xqmy"), ExtResource("45_mocjs"), ExtResource("46_r7fat"), ExtResource("47_yswft"), ExtResource("48_i26jh")])

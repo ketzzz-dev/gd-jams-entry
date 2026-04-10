@@ -327,7 +327,6 @@ shadow_enabled = true
 script = ExtResource("1_esbqf")
 region_size = Vector2(30, 30)
 min_distance = 1.0
-max_characters = 150
 character_scene = ExtResource("2_2qg2f")
 character_sprites = Array[Texture2D]([ExtResource("3_55si8"), ExtResource("4_2xbo1"), ExtResource("5_s6ugq"), ExtResource("6_rsgxd"), ExtResource("7_rtvd0"), ExtResource("8_igyp7"), ExtResource("9_2wje5"), ExtResource("10_o3cos"), ExtResource("11_02cuy"), ExtResource("12_ovorj"), ExtResource("13_o35ax"), ExtResource("14_yon1u"), ExtResource("15_l46si"), ExtResource("16_f4qwk"), ExtResource("17_80cxe"), ExtResource("18_xgral"), ExtResource("19_lv8ev"), ExtResource("20_i1p3j"), ExtResource("21_pj6r0"), ExtResource("22_a68i7"), ExtResource("23_srxq3"), ExtResource("24_mv5vl"), ExtResource("25_bme78"), ExtResource("26_3dwx5"), ExtResource("27_880ci"), ExtResource("28_sa3je"), ExtResource("29_puykg"), ExtResource("30_3ptip"), ExtResource("31_yla54"), ExtResource("32_n7snf"), ExtResource("33_vu7i7"), ExtResource("34_wu2d3")])
 character_archetypes = Array[ExtResource("35_mgtrs")]([SubResource("Resource_sla20"), ExtResource("41_r7a7v"), ExtResource("42_8fhsb"), ExtResource("43_uiwk8"), ExtResource("44_3gchp"), ExtResource("45_hnrjl"), ExtResource("46_q6cky"), ExtResource("47_kfukg"), ExtResource("48_7838m")])

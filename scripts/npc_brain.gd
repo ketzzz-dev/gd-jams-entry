@@ -61,7 +61,8 @@ func get_intent(delta: float) -> Vector2:
 		"global_position": owner.global_position,
 		"nav_agent": owner.nav_agent,
 		"cluster_center": owner.cluster_center,
-		"cluster_id": owner.cluster_id
+		"cluster_id": owner.cluster_id,
+		"cam": get_viewport().get_camera_3d()
 	}
 
 	# --- GOAL LAYER ---
