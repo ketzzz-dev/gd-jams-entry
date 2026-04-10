@@ -41,7 +41,6 @@ text = "Guess You?"
 horizontal_alignment = 1
 
 [node name="StartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=368857949]
-visible = false
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -51,7 +50,6 @@ theme_override_font_sizes/font_size = 24
 text = "Start"
 
 [node name="HowToPlayButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1991661307]
-visible = false
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -61,7 +59,6 @@ theme_override_font_sizes/font_size = 24
 text = "How to Play"
 
 [node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1205687708]
-visible = false
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -97,30 +94,32 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HowToPanel" unique_id=216408541]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 14
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -44.0
-offset_top = -40.0
-offset_right = 44.0
-offset_bottom = 40.0
+offset_top = -120.0
+offset_bottom = 120.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 12
 
 [node name="HowToLabel" type="Label" parent="HowToPanel/VBoxContainer" unique_id=96915918]
 layout_mode = 2
-size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 3
 theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("2_bqqt6")
-theme_override_font_sizes/font_size = 36
-text = "Your goal is to"
+theme_override_font_sizes/font_size = 24
+text = "Imagine a game of Where is Waldo? But you are Waldo, and the crowd is alive. You have to figure out which character you are controlling in a busy crowd.
+
+Left Mouse - Orbit Camera
+Right Mouse - Zoom In
+Space Bar - Selection Mode
+Left Mouse (Selection Mode) - Select Character"
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="BackButton" type="Button" parent="HowToPanel/VBoxContainer" unique_id=1388471410]
 layout_mode = 2
