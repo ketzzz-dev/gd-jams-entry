@@ -23,6 +23,9 @@ func _ready():
 	timer.timeout.connect(_on_stage_timeout)
 	success_screen.connect("next_stage_pressed", Callable(self, "_on_next_stage"))
 	game_over_screen.connect("restart_pressed", Callable(self, "_on_restart"))
+	
+	await get_tree().physics_frame # magic
+	
 	start_stage(stage_time)
 
 func start_stage(time: float):
