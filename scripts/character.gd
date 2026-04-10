@@ -43,7 +43,24 @@ func _physics_process(delta: float) -> void:
 	var is_idle = velocity.is_zero_approx()
 	
 	if not is_idle:
-		_last_direction = Vector2(velocity.x, velocity.z).normalized()
+		var cam = get_viewport().get_camera_3d()
+
+		var forward = cam.global_transform.basis.z
+		var right = cam.global_transform.basis.x
+
+		# Flatten to XZ plane
+		forward.y = 0
+		right.y = 0
+
+		forward = forward.normalized()
+		right = right.normalized()
+
+		var move_dir = velocity.normalized()
+
+		var x = move_dir.dot(right)
+		var y = move_dir.dot(forward)
+
+		_last_direction = Vector2(x, y)
 	
 	animation_tree.set("parameters/conditions/idle", is_idle)
 	animation_tree.set("parameters/conditions/walk", not is_idle)
